@@ -14,3 +14,8 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
   :class="isActive"
   :style="isStyled"
   :disabled="isDisabled"
+### @
+- We can use @ for modifier or event occuring(moveover,mouseup).
+
+### v-on:
+- v-on: for event handling.
