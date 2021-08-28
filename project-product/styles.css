@@ -49,11 +49,15 @@ ul {
 }
 
 .variant-container {
-  padding-top: 0.5rem;
+  display: flex;
+  padding: 1rem 0;
 }
 
-.variant-items {
-  color: grey;
+.variant-item {
+  padding-top: 0.5rem;
+  width: 4vh;
+  height: 4vh;
+  border: 3px solid lightgray;
 }
 
 .product-info button {
@@ -77,6 +81,12 @@ ul {
   border: 1px solid darkgray;
   text-align: center;
   width: 50%;
+}
+
+.disableButton {
+  background: lightgray;
+  cursor: not-allowed;
+  color: azure !important;
 }
 
 @media (max-width: 720px) {
