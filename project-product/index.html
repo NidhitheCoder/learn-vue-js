@@ -19,8 +19,14 @@
         <p v-if="inventory > 10">In stock</p>
         <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out !</p>
         <p v-else>Out of stock</p>
-        <p v-show="multiColor">Mutlicolor available</p>
         <a v-bind:href="item">See in different color</a>
+        <ul>
+          <li v-for="detail in details">{{ detail }}</li>
+        </ul>
+        <p v-show="multiColor" class="multi-color">Mutlicolor available</p>
+        <div v-for="variant in variants" :key="variant.variantId">
+          <p class="variant-items">{{ variant.variantColor }}</p>
+        </div>
       </div>
     </div>
   </div>

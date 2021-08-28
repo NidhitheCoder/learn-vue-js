@@ -14,8 +14,13 @@
 .product{
   display: flex;
   flex-direction: row;
-  flex: 1 1 1;
   padding: 2rem;
+}
+
+.multi-color {
+  font-size: 16px;
+  font-weight: 600;
+  color: crimson;
 }
 
 .product-image img{
@@ -28,4 +33,13 @@
 
 .product-info p{
   padding: 1rem 0;
+}
+
+ul {
+  padding: 2rem;
+}
+
+.variant-items {
+  color: grey;
+  padding: 1rem !important;
 }
