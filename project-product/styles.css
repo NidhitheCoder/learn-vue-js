@@ -86,7 +86,7 @@ ul {
 .disableButton {
   background: lightgray;
   cursor: not-allowed;
-  color: azure !important;
+  color: cadetblue !important;
 }
 
 @media (max-width: 720px) {
