@@ -19,3 +19,21 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 
 ### v-on:
 - v-on: for event handling.
+
+### Vue.component
+- vue allow to create reusable components.
+- syntax : `Vue.components('componentName', {optionalComponents}`
+- example :
+  ```
+  Vue.components('item', {
+    props: [message],
+    template: `<div>
+              ...contents{{message}}
+              </div> `,
+    data() {
+      return ..some-data
+    }
+  });
+  ```
+
+- Props: A custom attribute for passing data into our components.
