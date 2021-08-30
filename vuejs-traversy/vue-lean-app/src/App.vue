@@ -1,13 +1,17 @@
 <template>
   <div class="container">
-    <h1>Hello world</h1>
+    <Header title="Task tracker" />
   </div>
 </template>
 
 <script>
+import Header from './components/header.vue'
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    Header
+  },
 };
 </script>
 
