@@ -1,0 +1,49 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+ }
+
+ body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   min-height: 100vh;
+ }
+
+ #app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ button {
+   padding: 10px;
+   margin: 10px 0;
+   background-color: black;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   font-weight: 600;
+ }
+
+ img {
+   border-radius: 50%;
+   height: 120px;
+   width: 120px;
+   border: 3px solid black;
+ }
+
+ .male {
+   border: 3px solid steelblue;
+   background-color: steelblue;
+ }
+
+ .female {
+   border: 3px solid pink;
+   background-color: pink;
+   color: black;
+ }
