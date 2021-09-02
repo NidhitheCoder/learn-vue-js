@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Task from "./task.vue";
+import Task from "./TaskComp.vue";
 
 export default {
   name: "Tasks",

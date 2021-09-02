@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Button from './button.vue'
+import Button from './ButtonComp.vue';
 export default {
  name: 'Header',
  props: {
