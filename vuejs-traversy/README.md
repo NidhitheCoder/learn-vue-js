@@ -26,3 +26,13 @@ vue cli is the standard tooling for Vue.js development.
 - dev server and easy production build.
 - Optional GUI for managing Vue projects.
 - Integrated testing, typescript support, ESLint and more.  
+
+### How to install vue CLI?
+- `sudo npm i @vue/cli` (if need to install globally add -g tag).
+- To install vue ui - `vue ui`
+
+### How to create an app ?
+ - `vue create appName`
+
+ ### How to run ?
+ - `npm run serve`
