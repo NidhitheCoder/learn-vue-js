@@ -27,8 +27,19 @@ export default {
     };
   },
   methods: {
-    addTask(task) {
-      this.tasks = [...this.tasks, task];
+    async addTask(task) {
+      const res = await fetch('api/tasks', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(task),
+      });
+
+      console.log(await res);
+
+      const data = await res.json();
+      this.tasks = [...this.tasks, data];
     },
     deleteTask(id) {
       if (confirm('Do you want to delete?')) {
