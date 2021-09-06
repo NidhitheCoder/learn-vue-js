@@ -4,19 +4,19 @@
       "id": 1,
       "text": "Doctor appointment",
       "day": "March 1st at 2:30pm",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
       "text": "Meeting at school",
       "day": "March 21st at 9:30am",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 3,
       "text": "Shopping",
       "day": "March 2nd at 12:30pm",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 4,
@@ -35,12 +35,6 @@
       "text": "Meet Sera",
       "day": "march 12 at 3 pm",
       "remidner": true
-    },
-    {
-      "id": 514,
-      "text": "Play football",
-      "day": "evening 5",
-      "remidner": false
     }
   ]
 }
