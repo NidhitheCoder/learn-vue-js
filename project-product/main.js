@@ -76,10 +76,10 @@ Vue.component("product", {
   },
   methods: {
     addToCart() {
-      this.$emit('add-to-cart');
+      this.$emit('add-to-cart', this.variants[this.selectedVariant].variantId);
     },
     removeFromCart() {
-      this.cart -= 1;
+      this.$emit('remove-from-cart', this.variants[this.selectedVariant].variantId);
     },
     // updateProduct(image) {
     // this.image = image;
@@ -112,11 +112,21 @@ const app = new Vue({
   el: "#app",
   data: {
     premium: true,
-    cart: 9,
+    cart: [],
   },
   methods: {
-    updateCart() {
-      this.cart += 1;
+    updateCart(id) {
+      this.cart.push(id)
+    },
+    deleteItem(id) {
+      let count = 0;
+      this.cart = this.cart.filter(item => {
+        if(item === id && count === 0 ) {
+          count++;
+          return ;
+        }
+        return item;
+      })
     }
   }
 });
