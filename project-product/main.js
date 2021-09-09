@@ -46,6 +46,17 @@ Vue.component("product", {
     <button v-on:click="removeFromCart" class="remove-button" :disabled="!inventory" :class="{disableButton: !inventory}">
       Remove from cart
     </button>
+    <div>
+      <h2>Reviews</h2>
+      <p v-if="!reviews.length">There are no review yet.</p>
+      <ul>
+        <li v-for="review in reviews">
+          <p>{{ review.name }}</p>
+          <p>{{ review.review }}</p>
+          <p>{{ review.rating }}</p>
+        </li>
+      </ul>
+    </div>
     <product-review @review-submitted="addReview"></product-review>
   </div>
 </div>`,
@@ -91,6 +102,7 @@ Vue.component("product", {
       console.log(index);
     },
     addReview(productReview) {
+      console.log('product review', productReview);
       this.reviews.push(productReview)
       console.log(this.reviews)
     }
