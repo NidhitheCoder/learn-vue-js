@@ -37,3 +37,9 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
   ```
 
 - Props: A custom attribute for passing data into our components.
+
+## To install 
+- vue create <appName>
+
+## To run
+- npm run serve
