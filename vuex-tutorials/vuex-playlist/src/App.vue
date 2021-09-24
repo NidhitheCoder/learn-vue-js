@@ -28,4 +28,8 @@ export default {
 </script>
 
 <style>
+
+body{
+  color: #555;
+}
 </style>
