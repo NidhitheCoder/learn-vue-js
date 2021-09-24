@@ -16,12 +16,7 @@ export default {
   name: "app",
   data() {
     return {
-      products: [
-        { name: "Banana skin", price: 20 },
-        { name: "Orange", price: 40 },
-        { name: "Greenshell", price: 65 },
-        { name: "Red shells", price: 55 },
-      ],
+      
     };
   },
 };
