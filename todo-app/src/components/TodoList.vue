@@ -1,6 +1,38 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="container">
+    <h2 class="text-center mt-5">{{ msg }}</h2>
+    <!-- Input -->
+    <div class="d-flex">
+      <input type="text" placeholder="Enter text" class="form-control">
+      <button class="btn btn-warning rounded-0">SUBMIT</button>
+    </div>
+    <!-- Task table -->
+    <table class="table table-bordered mt-5">
+      <thead>
+        <tr>
+          <th scope="col">Task</th>
+          <th scope="col">Status</th>
+          <th scope="col" class="text-center">#</th>
+          <th scope="col" class="text-center">#</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Steal bananas from the store.</td>
+          <td>Todo</td>
+          <td>
+            <div class="text-center">
+              <span class="fa fa-pen"></span>
+            </div>
+          </td>
+          <td>
+            <div class="text-center">
+              <span class="fa fa-trash"></span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -13,20 +45,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>

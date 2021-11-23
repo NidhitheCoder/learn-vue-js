@@ -1,7 +1,6 @@
 <template>
   <div>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <TodoList msg="Toto list component"/>
+    <TodoList msg="My VUE Todo App"></TodoList>
   </div>
 </template>
 
