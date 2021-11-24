@@ -44,7 +44,8 @@ export default {
   },
   data() {
     return {
-      task: '', 
+      task: '',
+      editedTask: null,
       tasks : [
         {
           name: 'Steal banana from the store',
@@ -64,17 +65,24 @@ export default {
   methods: {
     submitTask(){
       if(this.task.length === 0) return;
-      this.tasks.push({
-        name: this.task,
-        status: 'to-do',
-      })
+
+      if(this.editedTask === null) {
+        this.tasks.push({
+          name: this.task,
+          status: 'to-do',
+        });
+      } else {
+        this.tasks[this.editedTask].name = this.task;
+        this.editedTask = null;
+      }
       this.task = "";
     },
     deleteTask(taskIndex) {
       this.tasks.splice(taskIndex, 1);
     },
-    editTask() {
-
+    editTask(index) {
+     this.task = this.tasks[index].name;
+     this.editedTask = index;
     }
   }
 }
