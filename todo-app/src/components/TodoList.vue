@@ -24,12 +24,32 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(task, index) in tasks" :key="index">
-          <td>{{ task.name }}</td>
+        <tr
+          v-for="(task, index) in tasks"
+          :key="index"
+          :style="[
+            task.status === 'to-do' && { backgroundColor: '#fcd5ce' },
+            task.status === 'in-progress' && { backgroundColor: '#fefae0' },
+            task.status === 'finished' && { backgroundColor: '#e9edc9' },
+          ]"
+        >
+          <td>
+            <span :class="{ finished: task.status === 'finished' }">
+              {{ task.name }}
+            </span>
+          </td>
           <td style="width: 120px">
-            <span class="pointer" @click="changeStatus(index)">{{
-             firstCharUpper(task.status)
-            }}</span>
+            <span
+              class="pointer"
+              @click="changeStatus(index)"
+              :class="{
+                'text-danger': task.status === 'to-do',
+                'text-warning': task.status === 'in-progress',
+                'text-success': task.status === 'finished',
+              }"
+            >
+              {{ firstCharUpper(task.status) }}
+            </span>
           </td>
           <td>
             <div class="text-center" @click="editTask(index)">
@@ -57,7 +77,7 @@ export default {
     return {
       task: "",
       editedTask: null,
-      availableStatuses: ["to-do", "inProgress", "finished"],
+      availableStatuses: ["to-do", "in-progress", "finished"],
       tasks: [
         {
           name: "Steal banana from the store",
@@ -111,5 +131,9 @@ export default {
 <style scoped>
 .pointer {
   cursor: pointer;
+}
+
+.finished {
+  text-decoration: line-through;
 }
 </style>
