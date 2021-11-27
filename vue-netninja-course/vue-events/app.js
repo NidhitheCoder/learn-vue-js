@@ -18,6 +18,9 @@ new Vue({
       this.x = event.offsetX;
       this.y = event.offsetY;
       this.color ='rgb('+this.x+','+this.y+','+this.x+')';
+    },
+    click: function() {
+      alert("You click me")
     }
   }
 })

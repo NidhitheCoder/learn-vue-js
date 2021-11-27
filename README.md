@@ -36,6 +36,11 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 
 - v-on: for event handling.
 
+### Event modifiers
+
+- Vue.js allows us to handle events triggered by the user. Handling events helps add interactivity to web apps by responding to the user’s input.
+- https://vuejs.org/v2/guide/events.html#Event-Modifiers
+
 ### Vue.component
 
 - vue allow to create reusable components.
