@@ -68,3 +68,13 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 ## To run
 
 - npm run serve
+
+# vue CLI
+
+- Vue CLI allows to create a dev environment workflow with webpack. Vue CLI uses ES6 features.
+- It allows to compile and minify our js into 1 file, significantly reduce our loading speed.
+- It use single file templates.
+- Allows to Compile everything on our machine, not in a browser.
+- Live reload dev server.
+- How to install ? `npm install vue-cli`
+- How to create new vue project with CLI? `vue init <template-name> <project-name>`
