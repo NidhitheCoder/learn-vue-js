@@ -1,21 +1,20 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>{{ greeting() }}</p>
+    <!-- <ninjas></ninjas>  Using global registered component-->
+    <ninjas></ninjas>
   </div>
 </template>
 
 <script>
+import Ninjas from './Ninjas.vue';
+// Locally regeisted component
 export default {
+  components: { Ninjas }, // Add Component
   data() {
     return {
-      title: "Your first vue file ",
+      title: "Ninja App",
     };
-  },
-  methods: {
-    greeting: function () {
-      return "Heyy here is your greeting";
-    },
   },
 };
 </script>
