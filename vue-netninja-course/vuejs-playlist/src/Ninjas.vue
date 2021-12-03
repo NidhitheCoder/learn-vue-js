@@ -1,3 +1,4 @@
+  <!-- previous tutorial code -->
 <template>
   <div>
     <h1>List of ninjas</h1>
@@ -18,7 +19,7 @@ export default ({
 </script>
 
 <style scoped>
-  h1{
+  h1 {
     color: green;
   }
 </style>
