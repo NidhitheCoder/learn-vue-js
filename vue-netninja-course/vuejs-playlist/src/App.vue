@@ -1,7 +1,7 @@
 <template>
   <div>
   <app-header></app-header>
-  <ninjas></ninjas>
+  <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
   <app-footer></app-footer>
   </div>
 </template>
@@ -15,12 +15,18 @@ export default {
   components: {
     'app-header': Header,
     'app-footer': Footer,
-    'ninjas': Ninjas,
-    Ninjas,
+    'app-ninjas': Ninjas,
   },
   data() {
     return {
-
+      ninjas: [
+        {name: 'Ryu', speciality: 'Vue components', show: false},
+        {name: 'Crystal', speciality: 'HTML Wizardry', show: false},
+        {name: 'Hitoshi', speciality: 'Click events', show: false},
+        {name: 'Tango', speciality: 'Conditionals', show: false},
+        {name: 'Shoy', speciality: 'Click events', show: false},
+        {name: 'Kim', speciality: 'Conditionals', show: false},
+      ]
     };
   },
 };

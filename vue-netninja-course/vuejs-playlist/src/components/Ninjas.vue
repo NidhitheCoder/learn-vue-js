@@ -11,18 +11,26 @@
 
 <script>
   export default({
+    // props: ['ninjas'],
+
+    // Props type validation
+    props: {
+      ninjas: {
+        type: Array,
+        required: true,
+      }
+    },
     data() {
       return {
-        ninjas: [
-          {name: 'Ryu', speciality: 'Vue components', show: false},
-          {name: 'Crystal', speciality: 'HTML Wizardry', show: false},
-          {name: 'Hitoshi', speciality: 'Click events', show: false},
-          {name: 'Tango', speciality: 'Conditionals', show: false},
-          {name: 'Shoy', speciality: 'Click events', show: false},
-          {name: 'Kim', speciality: 'Conditionals', show: false},
-        ]
+       
       } 
     },
+    // we can use the ninjas prop with 'this.ninjas'
+    // methods: {
+    //   test: function() {
+    //     this.ninjas
+    //   }
+    // }
   })
 </script>
 
