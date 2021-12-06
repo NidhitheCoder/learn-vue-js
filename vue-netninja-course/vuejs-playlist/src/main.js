@@ -5,6 +5,8 @@ import App from './App.vue'
 // // Registered component globally 
 // Vue.component('ninjas', Ninjas )
 
+export const bus = new Vue();
+
 new Vue({
   el: '#app',
   render: h => h(App)

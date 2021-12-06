@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import { bus } from '../main';
 export default {
   props:{
     title: {
