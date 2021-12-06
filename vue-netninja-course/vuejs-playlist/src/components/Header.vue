@@ -18,7 +18,8 @@ export default {
   },
   methods: {
     changeTitle: function() {
-      this.title = "Ninja warriers"
+      // this.title = "Ninja warriers"
+      this.$emit('changeTitle', 'Ninja warriers')
     }
   }
 }
