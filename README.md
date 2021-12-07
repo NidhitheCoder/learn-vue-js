@@ -68,3 +68,26 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 ## To run
 
 - npm run serve
+
+# vue CLI
+
+- Vue CLI allows to create a dev environment workflow with webpack. Vue CLI uses ES6 features.
+- It allows to compile and minify our js into 1 file, significantly reduce our loading speed.
+- It use single file templates.
+- Allows to Compile everything on our machine, not in a browser.
+- Live reload dev server.
+- How to install ? `npm install vue-cli`
+- How to create new vue project with CLI? `vue init <template-name> <project-name>`
+- For installing all the dependencies `npm install`.
+- For run `npm run dev`.
+
+## Premitive data types and Referance data types
+
+- Premitive data types are string, boolean and integers.
+- Referance data types are objects and arrays.
+- Changing premitive types are affected directly in original data.
+- Changing referance types are affected only in local component copy.
+
+### Event bus
+
+- Event bus helps to communicate two kind on sibling elements in vue js.
