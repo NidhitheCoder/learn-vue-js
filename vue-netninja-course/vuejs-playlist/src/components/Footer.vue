@@ -18,6 +18,11 @@ export default {
       copyright: 'Copyright 2021 Ninjas'
     }
   },
+  created() {
+     bus.$on('titleChanged', (data) => {
+       this.title = data; 
+     })
+  }
 }
 </script>
 

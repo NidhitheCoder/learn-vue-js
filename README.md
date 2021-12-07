@@ -87,3 +87,7 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 - Referance data types are objects and arrays.
 - Changing premitive types are affected directly in original data.
 - Changing referance types are affected only in local component copy.
+
+### Event bus
+
+- Event bus helps to communicate two kind on sibling elements in vue js.
