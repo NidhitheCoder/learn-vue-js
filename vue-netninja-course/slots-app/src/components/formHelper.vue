@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
+    <slot name="title"></slot>
     <h1>I am the form helper</h1>
+    <slot name="para" ></slot>
   </div>
 </template>
 
@@ -11,7 +13,6 @@ export default {
   },
   data() {
     return {
-
     }
   },
   methods: {
@@ -24,18 +25,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+h1 {
+  color: red;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>

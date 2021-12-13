@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <form-helper>
-      <h1>I am the slot title</h1>
-      <p>I am the paragraph</p>
+      <h1 slot="title"> {{title}}</h1>
+      <p slot="para">I am the paragraph for the slot</p>
     </form-helper>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-
+      title: 'I am a dynamic slot title'
     }
   },
   methods: {
@@ -26,5 +26,5 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 </style>
