@@ -91,3 +91,6 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 ### Event bus
 
 - Event bus helps to communicate two kind on sibling elements in vue js.
+
+### Slots
+- We cal send html templates to the child components with the help of slotes.

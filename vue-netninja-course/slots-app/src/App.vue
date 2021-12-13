@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Testing app for slots"/>
+    <form-helper>
+      <h1>I am the slot title</h1>
+      <p>I am the paragraph</p>
+    </form-helper>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import formHelper from './components/formHelper.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'form-helper':formHelper
+  },
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
