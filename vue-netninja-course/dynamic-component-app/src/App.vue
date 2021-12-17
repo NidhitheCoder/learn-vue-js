@@ -1,28 +1,31 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <FormOne/>
+    <form-one/>
+    <form-two/>
   </div>
 </template>
 
 <script>
-import FormOne from './components/FormOne.vue'
+import FormOne from './components/FormOne.vue';
+import FormTwo from './components/FormTwo.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    'form-one': FormOne,
+    'form-two': FormTwo
+  },
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
