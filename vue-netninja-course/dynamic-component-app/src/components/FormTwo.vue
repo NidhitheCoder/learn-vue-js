@@ -1,6 +1,18 @@
 <template>
-  <div class="hello">
-    <h1>form two</h1>
+  <div>
+    <form-helper>
+      <div slot="form-fields">
+        <h3>Form two - login</h3>
+        <p>Enter your details to login</p>
+      </div>
+      <div slot="form-fields">
+        <input type="text" placeholder="unsername" required>
+         <input type="password" placeholder="password" required>
+      </div>
+      <div slot="form-controls">
+        <button v-on:click="handleSubmit">login</button>
+      </div>
+    </form-helper>
   </div>
 </template>
 
