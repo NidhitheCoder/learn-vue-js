@@ -1,7 +1,10 @@
 <template>
-  <div id="app">
-    <form-one/>
-    <form-two/>
+  <div>
+    <!-- <form-one></form-one>
+    <form-two></form-two> -->
+    <component v-bind:is="component"></component>
+    <button v-on:click="component='form-one'">Show form one</button>
+    <button v-on:click="component='form-two'">Show form two</button>
   </div>
 </template>
 
@@ -17,7 +20,7 @@ export default {
   },
   data() {
     return {
-
+      component: 'form-one',
     }
   },
   methods: {

@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import formHelper from '../../../slots-app/src/components/formHelper.vue'
+import formHelper from './formHelper.vue';
 export default {
   components: { formHelper },
   name: 'FormOne',
