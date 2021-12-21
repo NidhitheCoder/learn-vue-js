@@ -19,6 +19,16 @@
 <script>
 export default {
   name: 'FormTwo',
+  data() {
+    return {
+      counter: 0
+    }
+  },
+  methods: {
+    handleSubmit: function () {
+      alert("Thanks for logging in (form two")
+    }
+  }
 }
 </script>
 
