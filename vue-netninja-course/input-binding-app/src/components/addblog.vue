@@ -1,27 +1,56 @@
 <template>
-  <div id="addblog">
+  <div id="add-blog">
     <h2>Add a New Blog Post</h2>
     <form>
       <label>Blog Title:</label>
-      <input type="text" required>
+      <input type="text" v-model.lazy="blog.title" required />
       <label>Blog Content:</label>
-      <textarea></textarea>
+      <textarea v-model.lazy="blog.content"></textarea>
     </form>
-    <div class="preview">
+    <div id="preview">
       <h3>Preview Blog</h3>
-      <p>Blog title:</p>
+      <p>Blog title: {{ blog.title }}</p>
       <p>Blog content:</p>
+      <p>{{ blog.content }}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'addBlog',
-  props: {
-  }
-}
+  name: "addBlog",
+  props: {},
+  data() {
+    return {
+      blog: { title: "", content: "" },
+    };
+  },
+};
 </script>
 
 <style scoped>
+#add-blog * {
+  box-sizing: border-box;
+}
+#add-blog {
+  margin: 20px auto;
+  max-width: 500px;
+}
+label {
+  display: block;
+  margin: 20px 0 10px;
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+}
+
+#preview {
+  padding: 10px 20px;
+  border: 1px dotted #ccc;
+  margin: 30px 0;
+}
 </style>
