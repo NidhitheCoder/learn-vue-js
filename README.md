@@ -94,3 +94,7 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 
 ### Slots
 - We cal send html templates to the child components with the help of slotes.
+
+## Vue-resource(Pluggin for http requests)
+- How to install `yarn add vue-resource` or `npm install vue-resource`.
+- You can add vue-resource pluggin with CDN.
