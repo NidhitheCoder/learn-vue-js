@@ -31,5 +31,16 @@ export default {
 </script>
 
 <style scoped>
+  #show-blogs {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
+  .single-blog {
+    padding: 1rem;
+    margin: 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: lightblue;
+  }
 </style>
