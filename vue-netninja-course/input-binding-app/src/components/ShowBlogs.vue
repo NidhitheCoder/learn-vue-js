@@ -2,7 +2,7 @@
   <div id="show-blogs">
     <h1>All Blog Articles</h1>
     <div  v-for="blog in blogs" :key="blog.id" class="single-blog">
-      <h4>{{blog.title}}</h4>
+      <h4 v-rainbow>{{blog.title}}</h4>
       <p>
         {{blog.body}}
       </p>

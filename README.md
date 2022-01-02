@@ -98,3 +98,7 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 ## Vue-resource(Pluggin for http requests)
 - How to install `yarn add vue-resource` or `npm install vue-resource`.
 - You can add vue-resource pluggin with CDN.
+
+
+### Custom directives
+- We can create custom directives in vue js lik v-bind, v-if, v-for, v-model.
