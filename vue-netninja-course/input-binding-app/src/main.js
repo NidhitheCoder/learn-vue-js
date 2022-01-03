@@ -31,7 +31,12 @@ Vue.directive(
       }
     }
   }
-)
+);
+
+// Filters
+Vue.filter('to-uppercase', function(value) {
+  return value.toUpperCase();
+});
 
 new Vue({
   render: h => h(App),
