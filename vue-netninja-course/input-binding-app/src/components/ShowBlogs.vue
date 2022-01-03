@@ -4,7 +4,7 @@
     <div  v-for="blog in blogs" :key="blog.id" class="single-blog">
       <h4 v-rainbow>{{blog.title | to-uppercase}}</h4>
       <p>
-        {{blog.body}}
+        {{blog.body | snippet}}
       </p>
     </div>
   </div>
