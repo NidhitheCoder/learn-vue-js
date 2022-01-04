@@ -1,21 +1,26 @@
 <template>
   <div v-theme:column="'narrow'" id="show-blogs">
     <h1>All Blog Articles</h1>
-    <div  v-for="blog in blogs" :key="blog.id" class="single-blog">
-      <h4 v-rainbow>{{blog.title}}</h4>
+    <input type="text" v-model="search" placeholder="Search blogs">
+    <div  v-for="blog in filteredBlogs" :key="blog.id" class="single-blog">
+      <h3 v-idColor>Blog Id : {{blog.id | custom-id}}</h3>
+      <h4 v-rainbow>{{blog.title | to-uppercase}}</h4>
       <p>
-        {{blog.body}}
+        {{blog.body | snippet}}
       </p>
+      <p>Author: {{ blog.title | lastWord }}</p>
     </div>
   </div>
 </template>
 
 <script>
+import searchMixin from '../mixins/searchMixin';
 
 export default {
   data() {
     return {
-      blogs: []
+      blogs: [],
+      search: ''
     }
   },
   methods: {
@@ -25,7 +30,30 @@ export default {
     this.$http.get('https://jsonplaceholder.typicode.com/posts').then(function(data) {
       this.blogs = data.body.slice(0,10)
     })
-  }
+  },
+  computed: {
+    // filteredBlogs: function() {
+    //   return this.blogs.filter((blog) => {
+    //     return blog.title.match(this.search);
+    //   })
+    // }
+  },
+  filters: {
+    'custom-id': function(value) {
+       return value * 100;
+    },
+    lastWord(value) {
+      return value.slice(value.length-10, value.length);
+    }
+  },
+  directives: {
+    'idColor': {
+      bind(el, binding, vnode) {
+        el.style.color="#345fab";
+      }
+    }
+  },
+  mixins: [searchMixin]
 }
 </script>
 
