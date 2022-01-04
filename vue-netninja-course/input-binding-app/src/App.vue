@@ -20,7 +20,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Nunito SemiBold';
+  font-family: 'Nunito SemiBold', sans-serif;
   margin: 0;
 }
 </style>
