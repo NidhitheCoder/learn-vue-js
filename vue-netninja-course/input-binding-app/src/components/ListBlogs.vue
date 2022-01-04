@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import searchMixin from '../mixins/searchMixin'
+
 export default {
   data() {
     return {
@@ -28,18 +30,19 @@ export default {
     })
   },
   computed: {
-    filteredBlogs: function() {
-      return this.blogs.filter((blog) => {
-        return blog.title.match(this.search);
-      })
-    }
+    // filteredBlogs: function() {
+    //   return this.blogs.filter((blog) => {
+    //     return blog.title.match(this.search);
+    //   })
+    // }
   },
   filters: {
    
   },
   directives: {
     
-  }
+  },
+  mixins: [searchMixin]
 }
 </script>
 
@@ -47,7 +50,7 @@ export default {
 #show-blogs {
   max-width: 850px;
   margin: 0 auto;
-  padding-bottom: 2rem;
+  padding: 2rem;
   background: lightsalmon;
 }
 

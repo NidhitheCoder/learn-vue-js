@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import searchMixin from '../mixins/searchMixin';
 
 export default {
   data() {
@@ -31,11 +32,11 @@ export default {
     })
   },
   computed: {
-    filteredBlogs: function() {
-      return this.blogs.filter((blog) => {
-        return blog.title.match(this.search);
-      })
-    }
+    // filteredBlogs: function() {
+    //   return this.blogs.filter((blog) => {
+    //     return blog.title.match(this.search);
+    //   })
+    // }
   },
   filters: {
     'custom-id': function(value) {
@@ -51,7 +52,8 @@ export default {
         el.style.color="#345fab";
       }
     }
-  }
+  },
+  mixins: [searchMixin]
 }
 </script>
 
