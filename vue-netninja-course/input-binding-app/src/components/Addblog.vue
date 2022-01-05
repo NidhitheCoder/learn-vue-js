@@ -18,9 +18,9 @@
         <label>Birds</label>
         <input type="checkbox" value="birds" v-model="blog.categories" />
       </div>
-       <label>Author: </label>
+      <label>Author: </label>
       <select v-model="blog.author">
-        <option v-for="author in authors" :key="author">{{author}}</option>
+        <option v-for="author in authors" :key="author">{{ author }}</option>
       </select>
       <button v-on:click.prevent="post">Add Blog</button>
     </form>
@@ -34,9 +34,11 @@
       <p>{{ blog.content }}</p>
       <p>Blog Categories:</p>
       <ul>
-        <li v-for="category in blog.categories" :key="category">{{category}}</li>
+        <li v-for="category in blog.categories" :key="category">
+          {{ category }}
+        </li>
       </ul>
-      <p>Author: {{blog.author}}</p>
+      <p>Author: {{ blog.author }}</p>
     </div>
   </div>
 </template>
@@ -47,23 +49,25 @@ export default {
   props: {},
   data() {
     return {
-      blog: { title: "", content: "", categories: [], author: ""},
-      authors: ["Sara", "Smith", "William", "Helen" ],
+      blog: { title: "", content: "", categories: [], author: "" },
+      authors: ["Sara", "Smith", "William", "Helen"],
       submitted: false,
     };
   },
   methods: {
-    post: function() {
-      this.$http.post('http://jsonplaceholder.typicode.com/posts', {
-        title: this.blog.title,
-        content: this.blog.content,
-        userId: 1,
-      }).then(function(data) {
-        console.log(data)
-        this.submitted = true
-      })
-    }
-  }
+    post: function () {
+      this.$http
+        .post("http://jsonplaceholder.typicode.com/posts", {
+          title: this.blog.title,
+          content: this.blog.content,
+          userId: 1,
+        })
+        .then(function (data) {
+          console.log(data);
+          this.submitted = true;
+        });
+    },
+  },
 };
 </script>
 
@@ -96,18 +100,16 @@ textarea {
 #check-boxes input {
   display: inline-block;
   margin-right: 20px;
-
 }
 
 #check-boxes label {
   display: inline-block;
-
 }
 
 .success-msg {
   background-color: lightgreen;
-  padding:  1rem;
+  padding: 1rem;
   border-radius: 8px;
-  color:darkgreen;
+  color: darkgreen;
 }
 </style>
