@@ -1,12 +1,12 @@
 <template>
   <div v-theme:column="'narrow'" id="show-blogs">
     <h1>All Blog Articles</h1>
-    <input type="text" v-model="search" placeholder="Search blogs">
-    <div  v-for="blog in filteredBlogs" :key="blog.id" class="single-blog">
-      <h3 v-idColor>Blog Id : {{blog.id | custom-id}}</h3>
-      <h4 v-rainbow>{{blog.title | to-uppercase}}</h4>
+    <input type="text" v-model="search" placeholder="Search blogs" />
+    <div v-for="blog in filteredBlogs" :key="blog.id" class="single-blog">
+      <h3 v-idColor>Blog Id : {{ blog.id | custom-id }}</h3>
+      <h4 v-rainbow>{{ blog.title | to-uppercase }}</h4>
       <p>
-        {{blog.body | snippet}}
+        {{ blog.body | snippet }}
       </p>
       <p>Author: {{ blog.title | lastWord }}</p>
     </div>
@@ -14,22 +14,22 @@
 </template>
 
 <script>
-import searchMixin from '../mixins/searchMixin';
+import searchMixin from "../mixins/searchMixin";
 
 export default {
   data() {
     return {
       blogs: [],
-      search: ''
-    }
+      search: "",
+    };
   },
-  methods: {
-
-  },
+  methods: {},
   created() {
-    this.$http.get('https://jsonplaceholder.typicode.com/posts').then(function(data) {
-      this.blogs = data.body.slice(0,10)
-    })
+    this.$http
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then(function (data) {
+        this.blogs = data.body.slice(0, 10);
+      });
   },
   computed: {
     // filteredBlogs: function() {
@@ -39,35 +39,35 @@ export default {
     // }
   },
   filters: {
-    'custom-id': function(value) {
-       return value * 100;
+    "custom-id": function (value) {
+      return value * 100;
     },
     lastWord(value) {
-      return value.slice(value.length-10, value.length);
-    }
+      return value.slice(value.length - 10, value.length);
+    },
   },
   directives: {
-    'idColor': {
+    idColor: {
       bind(el, binding, vnode) {
-        el.style.color="#345fab";
-      }
-    }
+        el.style.color = "#345fab";
+      },
+    },
   },
-  mixins: [searchMixin]
-}
+  mixins: [searchMixin],
+};
 </script>
 
 <style scoped>
-  #show-blogs {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+#show-blogs {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  .single-blog {
-    padding: 1rem;
-    margin: 1rem;
-    box-sizing: border-box;
-    border-radius: 8px;
-    background-color: lightblue;
-  }
+.single-blog {
+  padding: 1rem;
+  margin: 1rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: lightblue;
+}
 </style>
