@@ -11,7 +11,8 @@ Vue.use(VueRouter);
 //  Instance for vue router
 const router = new VueRouter({
   // routes: [ route1, route2]
-  routes: Routes
+  routes: Routes,
+  mode: 'history'
 });
 
 //  Custom Directives
