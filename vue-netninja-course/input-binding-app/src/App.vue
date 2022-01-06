@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <app-header></app-header>
     <router-view></router-view>
     <!-- <add-blog></add-blog>
     <show-blogs></show-blogs>
@@ -11,6 +12,7 @@
 import addblog from "./components/Addblog";
 import showBlogs from "./components/ShowBlogs.vue";
 import listBlogs from "./components/ListBlogs.vue";
+import header from './components/header.vue';
 
 export default {
   name: "App",
@@ -18,6 +20,7 @@ export default {
     "add-blog": addblog,
     "show-blogs": showBlogs,
     "list-blogs": listBlogs,
+    'app-header': header,
   },
 };
 </script>
