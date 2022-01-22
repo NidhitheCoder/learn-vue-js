@@ -25,3 +25,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#single-blog {
+  max-width: 960px;
+  margin: 0 auto;
+}
+</style>

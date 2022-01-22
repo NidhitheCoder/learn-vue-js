@@ -4,7 +4,7 @@
     <input type="text" v-model="search" placeholder="Search blogs" />
     <div v-for="blog in filteredBlogs" :key="blog.id" class="single-blog">
       <h3 v-idColor>Blog Id : {{ blog.id | custom-id }}</h3>
-      <h4 v-rainbow>{{ blog.title | to-uppercase }}</h4>
+      <router-link :to="`blog/${blog.id}`"><h4 v-rainbow>{{ blog.title | to-uppercase }}</h4></router-link>
       <p>
         {{ blog.body | snippet }}
       </p>
