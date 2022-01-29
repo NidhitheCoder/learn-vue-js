@@ -102,3 +102,11 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 
 ### Custom directives
 - We can create custom directives in vue js lik v-bind, v-if, v-for, v-model.
+
+### Route parameters
+- Route parameters are named URL segments that are used to capture the values specified at their position in the url. The captured values  are populated in the req.params object, with the name of the route parameter  specified in the path as their respective keys.
+
+- How to setup a route:
+    { path:'/blog/:id', component: singleBlog }
+    
+    - In the above example we can detect route parameter inside singleRoute component and we can use and handle it.
