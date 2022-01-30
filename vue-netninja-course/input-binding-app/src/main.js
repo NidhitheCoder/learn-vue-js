@@ -4,12 +4,27 @@ import vueResource from 'vue-resource';
 import VueRouter from 'vue-router';
 import Routes from './routes';
 import axios from 'axios';
-import firebase from 'firebase';
+// import {firebase} from 'firebase';
 
 Vue.config.productionTip = false
 Vue.use(vueResource);
 Vue.use(VueRouter);
 Vue.prototype.$axios = axios;
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDAADQF7-4D2vyja9EV3pUhePaW290V_Eg",
+  authDomain: "vue-sample-19564.firebaseapp.com",
+  projectId: "vue-sample-19564",
+  storageBucket: "vue-sample-19564.appspot.com",
+  messagingSenderId: "182269898879",
+  appId: "1:182269898879:web:2a8b8a4bf0ca651fbe8f4a",
+  measurementId: "G-3F5DHJRH9K"
+};
+
+// Initialize Firebase
+// const app = firebase(firebaseConfig);
 
 //  Instance for vue router
 const router = new VueRouter({
