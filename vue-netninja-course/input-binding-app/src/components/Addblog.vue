@@ -57,7 +57,7 @@ export default {
   methods: {
     post: function () {
       this.$http
-        .post("https://vue-js-project-8c456.firebaseio.com/posts.json", this.blog)
+        .post("https://vue-sample-19564-default-rtdb.firebaseio.com//posts.json", this.blog)
         .then(function (data) {
           console.log(data);
           this.submitted = true;
