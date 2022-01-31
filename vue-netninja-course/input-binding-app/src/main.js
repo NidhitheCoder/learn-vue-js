@@ -3,13 +3,10 @@ import App from './App.vue';
 import vueResource from 'vue-resource';
 import VueRouter from 'vue-router';
 import Routes from './routes';
-import axios from 'axios';
-import firebase from 'firebase';
 
 Vue.config.productionTip = false
 Vue.use(vueResource);
 Vue.use(VueRouter);
-Vue.prototype.$axios = axios;
 
 //  Instance for vue router
 const router = new VueRouter({
