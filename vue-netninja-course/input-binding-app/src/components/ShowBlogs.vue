@@ -26,7 +26,7 @@ export default {
   methods: {},
   created() {
     this.$http
-      .get("https://vue-sample-19564-default-rtdb.firebaseio.com//posts.json")
+      .get("https://vue-sample-19564-default-rtdb.firebaseio.com/posts.json")
       .then(function (data) {
         return data.json();
       }).then(function(data) {
