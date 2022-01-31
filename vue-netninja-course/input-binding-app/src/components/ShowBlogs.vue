@@ -6,7 +6,7 @@
       <h3 v-idColor>Blog Id : {{ blog.id | custom-id }}</h3>
       <router-link :to="`blog/${blog.id}`"><h4 v-rainbow>{{ blog.title | to-uppercase }}</h4></router-link>
       <p>
-        {{ blog.body | snippet }}
+        {{ blog.content | snippet }}
       </p>
       <p>Author: {{ blog.title | lastWord }}</p>
     </div>
@@ -26,9 +26,16 @@ export default {
   methods: {},
   created() {
     this.$http
-      .get("https://jsonplaceholder.typicode.com/posts")
+      .get("https://vue-sample-19564-default-rtdb.firebaseio.com//posts.json")
       .then(function (data) {
-        this.blogs = data.body.slice(0, 10);
+        return data.json();
+      }).then(function(data) {
+        let blogsArray = [];
+        for ( let key in data){
+          data[key].id = key;
+          blogsArray.push(data[key]);
+        }
+        this.blogs = blogsArray;
       });
   },
   computed: {
