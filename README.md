@@ -61,6 +61,11 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 
 - Props: A custom attribute for passing data into our components.
 
+#### naming of vue component
+- Use pascal or kebab case for naming components( Normaly its pascal case).
+- Naming component with a prefix. for example, (for a button component  give a name specifically related to its usage). like, BaseButton, SubmitButton etc..
+- If you are creating a single use component then use a 'The' infront of its name. it is helpful for identify it is a single used component(Not nessessory).
+
 ## To install
 
 - vue create <appName>
