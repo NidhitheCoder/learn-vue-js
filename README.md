@@ -77,7 +77,7 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 - Allows to Compile everything on our machine, not in a browser.
 - Live reload dev server.
 - How to install ? `npm install vue-cli`
-- How to create new vue project with CLI? `vue init <template-name> <project-name>`
+- How to create new vue project with CLI? `vue init <template-name> <project-name>` or `vue create hello-world`
 - For installing all the dependencies `npm install`.
 - For run `npm run dev`.
 
