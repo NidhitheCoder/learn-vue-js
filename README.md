@@ -119,3 +119,11 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 
 ### vue js with Firebase
 - https://www.youtube.com/watch?v=XtbYBoKb2zY&t=445s
+
+### vue mixins
+- Mixins are the way that we can add more functionality to our vue instances and vue component. we can share mixins with multiple components and multiple places.
+- Don't use same name for mixin data and component data.
+
+
+## Vue js provide/inject
+- Using for passing informations to deeply nested child component.
