@@ -23,7 +23,14 @@
       },
       mutations: {},
       actions: {},
-      getters: {},
+      getters: {
+        state() {
+          return state.message.toUpperCase();
+        },
+        counter() {
+          return state.count;
+        },
+      },
     });
 
     // create vue instance
@@ -36,10 +43,14 @@
       },
       computed: {
         message() {
-          return store.state.message;
+          return store.getters.message;
+        },
+        count() {
+          return store.getters.counter;
         }
       }
     })
+    // https://www.youtube.com/watch?v=LW9yIR4GoVU
   </script>
 </body>
 </html>
