@@ -61,6 +61,11 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 
 - Props: A custom attribute for passing data into our components.
 
+#### naming of vue component
+- Use pascal or kebab case for naming components( Normaly its pascal case).
+- Naming component with a prefix. for example, (for a button component  give a name specifically related to its usage). like, BaseButton, SubmitButton etc..
+- If you are creating a single use component then use a 'The' infront of its name. it is helpful for identify it is a single used component(Not nessessory).
+
 ## To install
 
 - vue create <appName>
@@ -77,7 +82,7 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 - Allows to Compile everything on our machine, not in a browser.
 - Live reload dev server.
 - How to install ? `npm install vue-cli`
-- How to create new vue project with CLI? `vue init <template-name> <project-name>`
+- How to create new vue project with CLI? `vue init <template-name> <project-name>` or `vue create hello-world`
 - For installing all the dependencies `npm install`.
 - For run `npm run dev`.
 
@@ -114,3 +119,11 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 
 ### vue js with Firebase
 - https://www.youtube.com/watch?v=XtbYBoKb2zY&t=445s
+
+### vue mixins
+- Mixins are the way that we can add more functionality to our vue instances and vue component. we can share mixins with multiple components and multiple places.
+- Don't use same name for mixin data and component data.
+
+
+## Vue js provide/inject
+- Using for passing informations to deeply nested child component.
