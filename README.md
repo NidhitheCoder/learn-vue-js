@@ -127,3 +127,7 @@ Vue is a approchable, versatile and perfomant javascript framework that helps to
 
 ## Vue js provide/inject
 - Using for passing informations to deeply nested child component.
+
+
+## Vuex 
+- vuex is a state management pattern + library for vue js Applications. It served as a centerlized store for all the components in an application.
