@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref } from 'vue';
 
+import LearnComputed from './components/LearnComputed.vue'
+
 const input = ref<HTMLInputElement>();
 const increment = ref(4);
 const diff = ref();
@@ -47,14 +49,17 @@ const changes = (e: any) => {
 </script>
 
 <template>
-  <p>helloo</p>
-  <input ref="input" @input="changes" />
-  <p>{{ increment }}</p>
-  <button @click="colors.count++">Click me</button>
-  <p>{{ colors.count }}</p>
-  <p>{{ whole }}</p>
-  <p>{{ item }}</p>
-  <p>{{ diff }}</p>
+  <div class="wrapper">
+    <LearnComputed />
+    <p>helloo</p>
+    <input ref="input" @input="changes" />
+    <p>{{ increment }}</p>
+    <button @click="colors.count++">Click me</button>
+    <p>{{ colors.count }}</p>
+    <p>{{ whole }}</p>
+    <p>{{ item }}</p>
+    <p>{{ diff }}</p>
+  </div>
 </template>
 
 <style scoped>
@@ -65,5 +70,12 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 </style>
