@@ -22,6 +22,8 @@ const event = ref('click')
 
 const image = ref('https://picsum.photos/200/300')
 
+const responseValue = ref("")
+
 </script>
 
 <template>
@@ -52,14 +54,21 @@ const image = ref('https://picsum.photos/200/300')
     <br />
 
     <!-- V-On examples -->
-    <button v-on:click="doThis">Click me</button>
+    <!-- <button v-on:click="doThis">Click me</button>
     <button @click="doThis">short hand</button>
-    <button v-on:[event]="doThis">Dynamic event</button>
+    <button v-on:[event]="doThis">Dynamic event</button> -->
     <br />
     <!-- V-Bind examples-->
-    <image :style="{ height: '200px', width: '200px' }" v-bind:src="image" />
+    <!-- <image :style="{ height: '200px', width: '200px' }" v-bind:src="image" />
     <image :style="{ height: '200px', width: '200px' }" :src="image" />
-    <div :style="{ fontSize: '23px' }">hello</div>
+    <div :style="{ fontSize: '23px' }">hello</div> -->
+
+    <!-- v-Model input binding -->
+    <input type="text" v-text="responseValue" @input="(event: any) => responseValue = event?.target?.value">
+    <!-- normal case -->
+    <input v-model="responseValue" /> <!-- using vmodel -->
+    <p>{{ responseValue }}</p>
+
 </template>
 
 <style scoped></style>
