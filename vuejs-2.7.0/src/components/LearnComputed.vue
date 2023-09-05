@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, reactive } from 'vue';
+import { computed, reactive, ref } from 'vue';
 
 const authors = reactive({
     name: 'Jack',
@@ -14,7 +14,18 @@ const publishedBooksMessage = computed(() => authors.books.length ? 'Yes' : 'No'
 
 const soldAllBooks = () => {
     authors.books = [];
+    fullName.value = "Ricky Ponting";
 }
+
+
+// Writable computed property 
+const firstName = ref("John");
+const lastName = ref("Smith");
+
+const fullName = computed({
+    get: () => `${firstName.value} ${lastName.value}`,
+    set(newValue) { [firstName.value, lastName.value] = newValue.split(' ') }
+})
 
 </script>
 
@@ -24,6 +35,7 @@ const soldAllBooks = () => {
         <!-- <p>{{ authors.books.length ? 'Yes' : 'No' }}</p> -->
         <h5>{{ publishedBooksMessage }}</h5>
         <button @click="soldAllBooks">sold</button>
+        <p>{{ fullName }} => {{ firstName }} + {{ lastName }}</p>
     </div>
 </template>
 
