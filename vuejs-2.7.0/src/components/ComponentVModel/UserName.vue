@@ -6,7 +6,8 @@
 </template>
 
 <script setup lang="ts">
-defineProps(['firstName', 'lastName'])
+// defineProps(['firstName', 'lastName'])
+defineProps({ firstName: String, lastName: String })
 const emit = defineEmits(["update:firstName", "update:lastName"])
 
 const onFirstNameChange = (event: Event) => {

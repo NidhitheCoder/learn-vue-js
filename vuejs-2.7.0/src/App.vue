@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import ComponentIndex  from './components/ComponentVModel/ComponentIndex.vue'
 // import LearnComputed from './components/LearnComputed.vue';
-import ComponentVModel from './components/ComponentVModel.vue';
 // import VModelExamples from './components/VModelExamples.vue';
 // import RefsAndReactives from './components/RefsAndReactives.vue';
 </script>
@@ -10,7 +10,7 @@ import ComponentVModel from './components/ComponentVModel.vue';
     <!-- <LearnComputed /> -->
     <!-- <RefsAndReactives /> -->
     <!-- <VModelExamples /> -->
-    <ComponentVModel />
+    <ComponentIndex />
   </div>
 </template>
 
