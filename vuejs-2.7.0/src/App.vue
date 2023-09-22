@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import ComponentIndex  from './components/ComponentVModel/ComponentIndex.vue'
+// import ComponentIndex  from './components/ComponentVModel/ComponentIndex.vue'
 // import LearnComputed from './components/LearnComputed.vue';
 // import VModelExamples from './components/VModelExamples.vue';
 // import RefsAndReactives from './components/RefsAndReactives.vue';
+import LearnLifeCyclehooks from './components/LearnLifeCyclehooks.vue';
 </script>
 
 <template>
@@ -10,7 +11,8 @@ import ComponentIndex  from './components/ComponentVModel/ComponentIndex.vue'
     <!-- <LearnComputed /> -->
     <!-- <RefsAndReactives /> -->
     <!-- <VModelExamples /> -->
-    <ComponentIndex />
+    <!-- <ComponentIndex /> -->
+    <LearnLifeCyclehooks />
   </div>
 </template>
 
