@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import ComponentIndex from './components/ComponentVModel/ComponentIndex.vue';
+// import ComponentIndex from './components/ComponentVModel/ComponentIndex.vue';
 // import LearnComputed from './components/LearnComputed.vue';
 // import VModelExamples from './components/VModelExamples.vue';
 // import RefsAndReactives from './components/RefsAndReactives.vue';
-import LearnLifeCycleHooks from './components/LearnLifeCycleHooks.vue';
+// import LearnLifeCycleHooks from './components/LearnLifeCycleHooks.vue';
+import LearnSlots from './components/slots/LearnSlots.vue';
 
 const shouldShowForm = ref(true);
 
@@ -17,8 +18,9 @@ const onToggleClick = () => shouldShowForm.value = !shouldShowForm.value;
     <!-- <LearnComputed /> -->
     <!-- <RefsAndReactives /> -->
     <!-- <VModelExamples /> -->
-    <ComponentIndex v-if="shouldShowForm" />
-    <LearnLifeCycleHooks v-if="!shouldShowForm" />
+    <!-- <ComponentIndex v-if="shouldShowForm" />
+    <LearnLifeCycleHooks v-if="!shouldShowForm" /> -->
+    <LearnSlots />
   </div>
 </template>
 
