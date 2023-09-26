@@ -9,10 +9,11 @@
 
 <style>
 .fancy-button {
-  background-color: cadetblue;
+  background-color: rgb(15, 83, 161);
   border: none;
   border-radius: 8px;
   padding: 0.5rem 2rem;
-  color: whitesmoke;
+  color: white;
+  font-size: 1.2rem;
 }
 </style>

@@ -11,7 +11,15 @@ import NamedSlots from './NamedSlots.vue'
       <h6>Another string</h6>
     </FancyButton>
     <FancyButton />
-    <NamedSlots />
+    <NamedSlots>
+      <h2>Hello this is the default content for the named slot</h2>
+      <template #banner>
+        <h2>This is the banner content for the named slot component</h2>
+      </template>
+      <template v-slot:footer>
+        <p>This is the footer content for the named slot</p>
+      </template>
+    </NamedSlots>
   </div>
 </template>
 
