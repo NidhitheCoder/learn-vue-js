@@ -17,6 +17,7 @@
 * {
   color: black;
 }
+
 .header {
   background-color: beige;
 }
@@ -28,6 +29,7 @@
 .content {
   background-color: cadetblue;
 }
+
 .footer {
   background-color: coral;
 }
