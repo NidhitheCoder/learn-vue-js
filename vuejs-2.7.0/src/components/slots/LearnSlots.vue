@@ -11,10 +11,6 @@ const onToggleButtonClick = () => {
   responseSlot.value = responseSlot.value === 'error' ? 'success' : 'error'
 }
 
-const slotProps = {
-  greetingMessage: "Welcome to the page",
-  count: 9
-}
 </script>
 
 <template>
@@ -47,13 +43,13 @@ const slotProps = {
       <template v-slot:[responseSlot]> error Content </template>
     </DynamicSlotNames>
 
-    <!-- Scoped slots -->
+    <!--Single default scoped slots -->
     <h1>Scoped slots</h1>
-    <ScopedSlots :v-slot="slotProps">
+    <ScopedSlots v-slot="slotProps">
       <div class="scoped-slot-wrapper">
-      {{ slotProps.count }}
-      {{ slotProps.greetingMessage }}
-    </div>
+        {{ slotProps.count }}
+        {{ slotProps.text }}
+      </div>
     </ScopedSlots>
   </div>
 </template>

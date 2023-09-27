@@ -2,7 +2,7 @@
 <template>
     <div class="scoped-container">
         <p>Pre Content</p>
-        <slot :text="greetingMessage" :count="count">
+        <slot text="greetingMessage" count="4">
         </slot>
         <p>Post content</p>
     </div>
