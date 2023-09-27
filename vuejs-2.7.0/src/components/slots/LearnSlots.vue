@@ -4,6 +4,7 @@ import DynamicSlotNames from './DynamicSlotNames.vue'
 import FancyButton from './FancyButton.vue'
 import NamedSlots from './NamedSlots.vue'
 import ScopedSlots from './ScopedSlots.vue'
+import NamedScopedSlots from './NamedScopedSlots.vue'
 
 const responseSlot = ref('error')
 
@@ -51,6 +52,21 @@ const onToggleButtonClick = () => {
         {{ slotProps.text }}
       </div>
     </ScopedSlots>
+
+    <!-- Named scoped slots -->
+    <h1>Named Scoped Slots</h1>
+    <NamedScopedSlots>
+      <template #header="{ title }">
+        {{ title }}
+      </template>
+      <template #content="{ content }">
+        {{ content }}
+      </template>
+      <template #default="{ content }">
+        <h1>{{ content.name }}</h1>
+        <p>{{ content.value }}</p>
+      </template>
+    </NamedScopedSlots>
   </div>
 </template>
 
@@ -59,6 +75,7 @@ const onToggleButtonClick = () => {
   gap: 2rem;
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 .scoped-slot-wrapper {
