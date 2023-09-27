@@ -3,11 +3,17 @@ import { ref } from 'vue'
 import DynamicSlotNames from './DynamicSlotNames.vue'
 import FancyButton from './FancyButton.vue'
 import NamedSlots from './NamedSlots.vue'
+import ScopedSlots from './ScopedSlots.vue'
 
 const responseSlot = ref('error')
 
 const onToggleButtonClick = () => {
   responseSlot.value = responseSlot.value === 'error' ? 'success' : 'error'
+}
+
+const slotProps = {
+  greetingMessage: "Welcome to the page",
+  count: 9
 }
 </script>
 
@@ -40,6 +46,15 @@ const onToggleButtonClick = () => {
     <DynamicSlotNames>
       <template v-slot:[responseSlot]> error Content </template>
     </DynamicSlotNames>
+
+    <!-- Scoped slots -->
+    <h1>Scoped slots</h1>
+    <ScopedSlots :v-slot="slotProps">
+      <div class="scoped-slot-wrapper">
+      {{ slotProps.count }}
+      {{ slotProps.greetingMessage }}
+    </div>
+    </ScopedSlots>
   </div>
 </template>
 
@@ -48,5 +63,13 @@ const onToggleButtonClick = () => {
   gap: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.scoped-slot-wrapper {
+  background-color: darkgrey;
+  border-radius: 4px;
+  padding: 0.2rem;
+  color: orangered;
+  font-weight: 600;
 }
 </style>
