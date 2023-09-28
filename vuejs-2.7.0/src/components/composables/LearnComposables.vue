@@ -8,14 +8,13 @@ const ballRef = ref();
 const { x, y } = useMouse();
 const baseURL = 'https://jsonplaceholder.typicode.com/users'
 const { data: usersList, isLoading, error } = useFetch(baseURL);
-const { data: updateData, isLoading: onUpdateLoading, onMutate } = useUpdate();
+const { isLoading: onUpdateLoading, onMutate } = useUpdate();
 
 const onEditItemClick = (e: Event) => {
     const button = e.target as HTMLButtonElement;
     const firstData = usersList.value.find((user: any) => user.id.toString() === button.id);
     onMutate(baseURL, 'PATCH', firstData.id, '', { ...firstData, name: 'john' })
 }
-console.log(updateData);
 
 </script>
 <template>
