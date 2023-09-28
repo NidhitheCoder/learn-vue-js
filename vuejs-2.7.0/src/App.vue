@@ -8,6 +8,7 @@ import { provide, ref } from 'vue';
 // import LearnSlots from './components/slots/LearnSlots.vue';
 // import FallthroughAttribute from './components/FallthroughAttribute.vue';
 // import ProvideAndInject  from './components/ProvideAndInject.vue'
+import CustomDirective from './components/custom-directive/CustomDirective.vue';
 import LearnComposables from './components/composables/LearnComposables.vue'
 import type { Item } from './types';
 
@@ -35,6 +36,7 @@ provide('items', items);
     <!-- <FallthroughAttribute style="color:red" /> -->
     <!-- <ProvideAndInject /> -->
     <LearnComposables />
+    <CustomDirective />
   </div>
 </template>
 
