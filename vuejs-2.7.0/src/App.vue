@@ -7,9 +7,10 @@ import { provide, ref } from 'vue';
 // import LearnLifeCycleHooks from './components/LearnLifeCycleHooks.vue';
 // import LearnSlots from './components/slots/LearnSlots.vue';
 // import FallthroughAttribute from './components/FallthroughAttribute.vue';
-// import ProvideAndInject  from './components/ProvideAndInject.vue'
-import CustomDirective from './components/custom-directive/CustomDirective.vue';
-import LearnComposables from './components/composables/LearnComposables.vue'
+// import ProvideAndInject  from './components/ProvideAndInject.vue';
+// import CustomDirective from './components/custom-directive/CustomDirective.vue';
+// import LearnComposables from './components/composables/LearnComposables.vue';
+import CustomFormDirective from './components/custom-directive/CustomFormDirective.vue';
 import type { Item } from './types';
 
 // const shouldShowForm = ref(true);
@@ -35,8 +36,9 @@ provide('items', items);
     <!-- <LearnSlots /> -->
     <!-- <FallthroughAttribute style="color:red" /> -->
     <!-- <ProvideAndInject /> -->
-    <LearnComposables />
-    <CustomDirective />
+    <!-- <LearnComposables />
+    <CustomDirective /> -->
+    <CustomFormDirective />
   </div>
 </template>
 
