@@ -27,7 +27,7 @@ provide('items', items);
 </script>
 
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="main-wrapper">
     <!-- <button @click="onToggleClick" class="toggle-button">Toggle</button> -->
     <!-- <LearnComputed /> -->
     <!-- <RefsAndReactives /> -->

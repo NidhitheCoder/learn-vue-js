@@ -14,7 +14,7 @@ const change = () => {
     <KeepAlive>
         <SayHai v-if="show" />
     </KeepAlive>
-    <KeepAlive>
+    <KeepAlive :max="5">
         <SayHello v-if="!show" />
     </KeepAlive>
 </template>
