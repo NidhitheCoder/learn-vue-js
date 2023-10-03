@@ -10,7 +10,8 @@ import { provide, ref } from 'vue';
 // import ProvideAndInject  from './components/ProvideAndInject.vue';
 // import CustomDirective from './components/custom-directive/CustomDirective.vue';
 // import LearnComposables from './components/composables/LearnComposables.vue';
-import CustomFormDirective from './components/custom-directive/CustomFormDirective.vue';
+// import CustomFormDirective from './components/custom-directive/CustomFormDirective.vue';
+import KeepAliveComp from './components/build-in-components/KeepAliveComp.vue'
 import type { Item } from './types';
 
 // const shouldShowForm = ref(true);
@@ -26,7 +27,7 @@ provide('items', items);
 </script>
 
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="main-wrapper">
     <!-- <button @click="onToggleClick" class="toggle-button">Toggle</button> -->
     <!-- <LearnComputed /> -->
     <!-- <RefsAndReactives /> -->
@@ -38,7 +39,8 @@ provide('items', items);
     <!-- <ProvideAndInject /> -->
     <!-- <LearnComposables />
     <CustomDirective /> -->
-    <CustomFormDirective />
+    <!-- <CustomFormDirective /> -->
+    <KeepAliveComp />
   </div>
 </template>
 
