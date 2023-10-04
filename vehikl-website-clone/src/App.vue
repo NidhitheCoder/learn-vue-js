@@ -1,5 +1,8 @@
 <template >
   <h1>Vehikl website clone</h1>
+  <v-btn>
+    Vuetify button
+  </v-btn>
 </template>
 
 <script setup>
