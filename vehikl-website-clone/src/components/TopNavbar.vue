@@ -1,36 +1,45 @@
 <script setup></script>
 <template>
     <div class="navigation-container">
-        <div class="logo-wrapper">Logo</div>
+        <div class="logo-wrapper">
+            <img src="../assets/logo.png">
+        </div>
         <nav>
             <router-link to="/">Home</router-link>
             <router-link to="/how-we-work">How we work</router-link>
+            <router-link to="/team">Team</router-link>
+            <router-link to="/hiring">We're Hiring</router-link>
+            <router-link to="/contact">Contact</router-link>
         </nav>
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .navigation-container {
-    width: 60%;
+    width: 100%;
     margin: auto;
     display: flex;
-    height: 3rem;
+    padding: 0 13%;
+    height: 5rem;
     justify-content: space-between;
     align-items: center;
-}
-
-nav {
-    padding: 30px;
+    background-color: $color-primary-background;
+    position: fixed;
 }
 
 nav a {
     font-weight: bold;
-    color: #2c3e50;
+    color: $color-secondary-text;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    color: $orange-dark;
 }
 
 nav a.router-link-exact-active {
-    color: #42b983;
+    color: $orange-dark;
 }
 </style>
