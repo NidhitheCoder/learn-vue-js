@@ -11,10 +11,11 @@ import TopNavbar from './components/TopNavbar.vue'
   </div>
 </template>
 
-<style>
+<style lang="scss">
 .main-wrapper {
   height: 100%;
   width: 100%;
+  background-color: $color-primary-background;
 }
 
 .content-wrapper {

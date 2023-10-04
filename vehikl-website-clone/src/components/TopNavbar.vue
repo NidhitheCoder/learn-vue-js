@@ -25,6 +25,7 @@
     align-items: center;
     background-color: $color-primary-background;
     position: fixed;
+    border-bottom: 2px solid $color-primary-faded;
 }
 
 nav a {
@@ -33,10 +34,19 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.5rem;
+    font-size: 14px;
 }
 
 nav a:hover {
     color: $orange-dark;
+}
+
+nav a:active nav>a::after {
+    background-color: $orange-dark;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    content: '';
 }
 
 nav a.router-link-exact-active {
