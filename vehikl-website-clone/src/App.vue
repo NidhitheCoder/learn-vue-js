@@ -6,6 +6,9 @@
 
 </script>
 
-<style>
-
+<style lang="scss">
+h1 {
+  background-color: $color-primary-background;
+  color: $orange-dark
+}
 </style>
