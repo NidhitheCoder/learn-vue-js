@@ -1,0 +1,56 @@
+{
+    "navbar": {
+        "logo": "require('./assets/logo.png')",
+        "homeLabel": "HOME",
+        "howWeWorkLabel": "HOW WE WORK",
+        "teamLabel": "TEAM",
+        "hiringLabel": "WE'RE HIRING!",
+        "contactLabel": "CONTACT"
+    },
+    "hiring": {
+        "bannerTitle": "Jobs",
+        "bannerText": "Vehikl invests in our clients and our employees. If you are someone eager to learn, collaborate with others, and produce excellent results, then apply today to join our fast growing team!",
+        "bannerCard": {
+            "title": "Developer",
+            "text": "As a new member of our team, you will help build the interfaces, behaviours, architecture, and code quality of premium web and mobile applications. You will follow projects for new and existing clients from start to finish while working closely with those clients as well as your team. At Vehikl, mob programming is a big part of our processes and how we work. You will mob daily with other developers on our team to produce clean code with efficiency and finesse.",
+            "subtext": "We're currently only hiring applicants that reside in Ontario, Canada.",
+            "buttonLabel": "VIEW POSITION"
+        }
+    },
+    "footer": {
+        "logo": "./assets/logo.png",
+        "copy_rightText": "© 2023 VEHIKL",
+        "social": {
+            "twitter": {
+                "icon": "",
+                "tooltipText": "Twitter icon",
+                "url": "https://twitter.com/vehikl"
+            },
+            "instagram": {
+                "icon": "",
+                "tooltipText": "Instagram icon",
+                "url": "https://www.instagram.com/vehiklteam/"
+            },
+            "facebook": {
+                "icon": "",
+                "tooltipText": "Facebook icon",
+                "url": "https://www.facebook.com/vehiklteam/"
+            },
+            "linkedin": {
+                "icon": "",
+                "tooltipText": "Linked-in icon",
+                "url": "https://www.linkedin.com/company/vehikl"
+            },
+            "youtube": {
+                "icon": "",
+                "tooltipText": "Youtube icon",
+                "url": "https://www.youtube.com/channel/UCO9DRs4ZeAojMxlOussB1jw"
+            },
+            "podcast": {
+                "icon": "",
+                "tooltipText": "Podcast icon",
+                "url": "http://podcast.vehikl.com/"
+            }
+        }
+    }
+}
