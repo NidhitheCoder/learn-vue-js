@@ -4,31 +4,32 @@ import HowWeWork from '../views/HowWeWork.vue';
 import ContactView from '../views/ContactView.vue';
 import HiringView from '../views/HiringView.vue';
 import TeamView from '../views/TeamView.vue';
+import ROUTES from '@/constants/routes';
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
+    path: ROUTES.Home.path,
+    name: ROUTES.Home.name,
     component: HomeView
   },
   {
-    path: '/how-we-work',
-    name: 'how we work',
+    path: ROUTES.HowWeWork.path,
+    name: ROUTES.HowWeWork.name,
     component: HowWeWork
   },
   {
-    path: '/team',
-    name: 'team',
+    path: ROUTES.Team.path,
+    name: ROUTES.Team.name,
     component: TeamView
   },
   {
-    path: '/hiring',
-    name: 'hiring',
+    path: ROUTES.Hiring.path,
+    name: ROUTES.Hiring.name,
     component: HiringView
   },
   {
-    path: '/contact',
-    name: 'contact',
+    path: ROUTES.Contact.path,
+    name: ROUTES.Contact.name,
     component: ContactView
   }
 ]

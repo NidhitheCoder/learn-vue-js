@@ -1,15 +1,29 @@
-<script setup></script>
+<script setup>
+import websiteContent from '../data.json';
+import ROUTES from '../constants/routes'
+
+const {
+    contactLabel,
+    hiringLabel,
+    homeLabel,
+    howWeWorkLabel,
+    logo,
+    teamLabel,
+} = websiteContent.navbar;
+
+</script>
+
 <template>
     <div class="navigation-container">
         <div class="logo-wrapper">
-            <img src="../assets/logo.png">
+            <img :src="logo">
         </div>
         <nav>
-            <router-link to="/">Home</router-link>
-            <router-link to="/how-we-work">How we work</router-link>
-            <router-link to="/team">Team</router-link>
-            <router-link to="/hiring">We're Hiring</router-link>
-            <router-link to="/contact">Contact</router-link>
+            <router-link :to="ROUTES.Home.path">{{ homeLabel }}</router-link>
+            <router-link :to="ROUTES.HowWeWork.path">{{ howWeWorkLabel }}</router-link>
+            <router-link :to="ROUTES.Team.path">{{ teamLabel }}</router-link>
+            <router-link :to="ROUTES.Hiring.path">{{ hiringLabel }}</router-link>
+            <router-link :to="ROUTES.Contact.path">{{ contactLabel }}</router-link>
         </nav>
     </div>
 </template>
@@ -19,7 +33,7 @@
     width: 100%;
     margin: auto;
     display: flex;
-    padding: 0 13%;
+    padding: 0 17%;
     height: 5rem;
     justify-content: space-between;
     align-items: center;

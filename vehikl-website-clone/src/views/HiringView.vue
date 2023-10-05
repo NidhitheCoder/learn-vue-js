@@ -1,19 +1,18 @@
-<script setup></script>
+<script setup>
+import websiteContent from '../data.json';
+
+const { bannerTitle, bannerText, bannerCard } = websiteContent.hiring;
+
+</script>
+
 <template>
     <div class="banner">
-        <h1>Jobs</h1>
-        <p>
-            Vehikl invests in our clients and our employees. If you are someone eager to learn, collaborate with others, and
-            produce excellent results, then apply today to join our fast growing team!
-        </p>
+        <h1>{{ bannerTitle }}</h1>
+        <p> {{ bannerText }}</p>
         <div>
-            <p>
-                As a new member of our team, you will help build the interfaces, behaviours, architecture, and code quality
-                of premium web and mobile applications. You will follow projects for new and existing clients from start to
-                finish while working closely with those clients as well as your team. At Vehikl, mob programming is a big
-                part of our processes and how we work. You will mob daily with other developers on our team to produce clean
-                code with efficiency and finesse.
-            </p>
+            <h1>{{ bannerCard.title }}</h1>
+            <p>{{ bannerCard.text }} </p>
+            <p>{{ bannerCard.subtext }}</p>
         </div>
     </div>
 </template>
@@ -24,6 +23,6 @@
     height: 85vh;
     border-bottom: 2px solid $color-primary-faded;
     color: $color-secondary-text;
-    padding: 0 13%;
+    padding: 0 17%;
 }
 </style>
