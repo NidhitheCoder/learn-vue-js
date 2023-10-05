@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import websiteContent from '../data.json';
 
 const { bannerTitle, bannerText, bannerCard } = websiteContent.hiring;
