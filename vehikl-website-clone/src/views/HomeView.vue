@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    Home page is here
+    <img alt="Vue logo" src="../assets/logo.png">
   </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 </script>
