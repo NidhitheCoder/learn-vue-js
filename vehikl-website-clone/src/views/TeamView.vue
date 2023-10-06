@@ -2,11 +2,19 @@
 import TeamMemberCard from '@/components/TeamMemberCard.vue';
 import websiteContent from '../data.json';
 
-const { description, joinButtonLabel, teamMembers, title } = websiteContent.team;
+const {
+    backgroundURL,
+    description,
+    joinButtonLabel,
+    teamMembers,
+    title
+} = websiteContent.team;
+
 </script>
 
 <template>
-    <div class="team-container">
+    <div class="team-container"
+        :style="{ background: `linear-gradient(rgba(17, 24, 39, 0.6), rgba(17, 24, 39, 0.6), rgb(17, 24, 39)), url('${backgroundURL}')` }">
         <h1 class="team-container__banner-title">{{ title }}</h1>
         <p class="team-container__banner-text">{{ description }}</p>
         <v-btn class="team-container__join-button">{{ joinButtonLabel }}</v-btn>
@@ -19,6 +27,9 @@ const { description, joinButtonLabel, teamMembers, title } = websiteContent.team
 <style scoped lang="scss">
 .team-container {
     padding: 4rem 21%;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100%;
 
     &__banner-title {
         font-size: 3rem;
@@ -33,6 +44,7 @@ const { description, joinButtonLabel, teamMembers, title } = websiteContent.team
         line-height: 2rem;
         font-weight: 500;
         color: $color-secondary-text;
+        max-width: 650px;
     }
 
     &__join-button {
@@ -42,9 +54,10 @@ const { description, joinButtonLabel, teamMembers, title } = websiteContent.team
         font-weight: 600;
         letter-spacing: 0.05em;
         line-height: 1.25rem;
-        padding: 0.75rem;
+        padding: 0.75rem 1rem;
         margin-top: 2rem;
         height: auto;
+        border-radius: 0.5rem;
     }
 }
 

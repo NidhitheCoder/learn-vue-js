@@ -10,6 +10,7 @@
     "hiring": {
         "bannerTitle": "Jobs",
         "bannerText": "Vehikl invests in our clients and our employees. If you are someone eager to learn, collaborate with others, and produce excellent results, then apply today to join our fast growing team!",
+        "backgroundURL": "https://vehikl.com/static/9d371d67feba328c64d5ea7bfd62ed52/b3724/candid-1.webp",
         "bannerCard": {
             "title": "Developer",
             "text": "As a new member of our team, you will help build the interfaces, behaviours, architecture, and code quality of premium web and mobile applications. You will follow projects for new and existing clients from start to finish while working closely with those clients as well as your team. At Vehikl, mob programming is a big part of our processes and how we work. You will mob daily with other developers on our team to produce clean code with efficiency and finesse.",
@@ -57,6 +58,7 @@
         "title": "Our Team",
         "description": "We're a group of proud test-driven developers and creative product designers who focus on writing clean, maintainable code.",
         "joinButtonLabel": "JOIN OUR TEAM",
+        "backgroundURL": "https://vehikl.com/static/f0f392a0edd11799579a9f2f4a591608/795b9/candid-3.webp",
         "teamMembers": [
             {
                 "name": "Chris Keithlin",
@@ -69,11 +71,6 @@
                 "imageURL": "https://vehikl.com\n/static/a3816098c858defe5a80e8f6ca930beb/416c3/grant-lovell.webp"
             },
             {
-                "name": "Jeff Campbell",
-                "designation": "Developer",
-                "imageURL": "https://vehikl.com\n/static/eb86c07db94e2fb30d3e779157206d68/416c3/jeff-campbell.webp"
-            },
-            {
                 "name": "Colin DeCarlo",
                 "designation": "Developer",
                 "imageURL": "https://vehikl.com\n/static/28f1cf9c54c2b01d497e49a11ef3bbc5/416c3/colin-decarlo.webp"
@@ -82,6 +79,11 @@
                 "name": "Dan Soppelsa",
                 "designation": "Developer",
                 "imageURL": "https://vehikl.com\n/static/7ab912fb6f58414e41b4ea48a8e9e4cd/416c3/dan-soppelsa.webp"
+            },
+            {
+                "name": "Jeff Campbell",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/eb86c07db94e2fb30d3e779157206d68/416c3/jeff-campbell.webp"
             },
             {
                 "name": "Rich Bettridge",

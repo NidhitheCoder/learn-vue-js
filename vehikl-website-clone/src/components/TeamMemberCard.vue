@@ -21,6 +21,8 @@ defineProps<{ content: TeamMember }>()
     background-color: transparent;
     border: 2px solid $color-primary-faded;
     color: $color-dove-white;
+    min-height: 350px;
+    padding-top: 1rem;
 }
 
 .card-description-wrapper {
@@ -29,5 +31,17 @@ defineProps<{ content: TeamMember }>()
     text-align: center;
     padding: 1rem;
     height: auto;
+}
+
+.v-card-title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding: 0;
+}
+
+.v-card-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
 }
 </style>
