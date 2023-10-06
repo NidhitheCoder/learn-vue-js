@@ -20,37 +20,37 @@
     "footer": {
         "logo": "./assets/logo.png",
         "copy_rightText": "© 2023 VEHIKL",
-        "social": {
-            "twitter": {
-                "icon": "",
+        "socials": [
+            {
+                "name": "twitter",
                 "tooltipText": "Twitter icon",
                 "url": "https://twitter.com/vehikl"
             },
-            "instagram": {
-                "icon": "",
+            {
+                "name": "instagram",
                 "tooltipText": "Instagram icon",
                 "url": "https://www.instagram.com/vehiklteam/"
             },
-            "facebook": {
-                "icon": "",
+            {
+                "name": "facebook",
                 "tooltipText": "Facebook icon",
                 "url": "https://www.facebook.com/vehiklteam/"
             },
-            "linkedin": {
-                "icon": "",
+            {
+                "name": "linkedin",
                 "tooltipText": "Linked-in icon",
                 "url": "https://www.linkedin.com/company/vehikl"
             },
-            "youtube": {
-                "icon": "",
+            {
+                "name": "youtube",
                 "tooltipText": "Youtube icon",
                 "url": "https://www.youtube.com/channel/UCO9DRs4ZeAojMxlOussB1jw"
             },
-            "podcast": {
-                "icon": "",
+            {
+                "name": "podcast",
                 "tooltipText": "Podcast icon",
                 "url": "http://podcast.vehikl.com/"
             }
-        }
+        ]
     }
 }

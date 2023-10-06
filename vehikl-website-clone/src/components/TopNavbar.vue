@@ -33,7 +33,7 @@ const {
     width: 100%;
     margin: auto;
     display: flex;
-    padding: 0 17%;
+    padding: 0 21%;
     height: 5rem;
     justify-content: space-between;
     align-items: center;
@@ -52,11 +52,11 @@ nav a {
 }
 
 nav a:hover {
-    color: $orange-dark;
+    color: $color-orange-dark;
 }
 
 nav a:active nav>a::after {
-    background-color: $orange-dark;
+    background-color: $color-orange-dark;
     height: 2px;
     width: 100%;
     position: absolute;
@@ -64,6 +64,6 @@ nav a:active nav>a::after {
 }
 
 nav a.router-link-exact-active {
-    color: $orange-dark;
+    color: $color-orange-dark;
 }
 </style>
