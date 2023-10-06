@@ -1,17 +1,21 @@
 <script setup>
-import TestimonialCard from '@/components/TestimonialCard.vue';
+import TeamMemberCard from '@/components/TeamMemberCard.vue';
+import websiteContent from '../data.json';
+
+const { description, joinButtonLabel, teamMembers, title } = websiteContent.team;
 </script>
+
 <template>
     <div class="team-container">
-        <h1 class="team-container__banner-title">Our Team</h1>
-        <p class="team-container__banner-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, omnis.
-        </p>
-        <v-btn class="team-container__join-button">Join our team</v-btn>
+        <h1 class="team-container__banner-title">{{ title }}</h1>
+        <p class="team-container__banner-text">{{ description }}</p>
+        <v-btn class="team-container__join-button">{{ joinButtonLabel }}</v-btn>
     </div>
-    <div class="testimonial-container">
-        <TestimonialCard v-for="item in [1, 2, 3, 4, 5, 6]" :key="item"></TestimonialCard>
+    <div class="team-members-container">
+        <TeamMemberCard v-for="member in teamMembers" :key="member.name" :content="member" />
     </div>
 </template>
+
 <style scoped lang="scss">
 .team-container {
     padding: 4rem 21%;
@@ -44,7 +48,7 @@ import TestimonialCard from '@/components/TestimonialCard.vue';
     }
 }
 
-.testimonial-container {
+.team-members-container {
     padding: 0 21%;
     display: grid;
     width: 100%;
