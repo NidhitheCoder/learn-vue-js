@@ -1,5 +1,60 @@
-<script setup></script>
+<script setup>
+import TestimonialCard from '@/components/TestimonialCard.vue';
+</script>
 <template>
-    <h1>Team</h1>
+    <div class="team-container">
+        <h1 class="team-container__banner-title">Our Team</h1>
+        <p class="team-container__banner-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, omnis.
+        </p>
+        <v-btn class="team-container__join-button">Join our team</v-btn>
+    </div>
+    <div class="testimonial-container">
+        <TestimonialCard v-for="item in [1, 2, 3, 4, 5, 6]" :key="item"></TestimonialCard>
+    </div>
 </template>
-<style></style>
+<style scoped lang="scss">
+.team-container {
+    padding: 4rem 21%;
+
+    &__banner-title {
+        font-size: 3rem;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: $color-smoke-white;
+    }
+
+    &__banner-text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 500;
+        color: $color-secondary-text;
+    }
+
+    &__join-button {
+        background-color: $color-orange-dark;
+        color: $color-white;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        line-height: 1.25rem;
+        padding: 0.75rem;
+        margin-top: 2rem;
+        height: auto;
+    }
+}
+
+.testimonial-container {
+    padding: 0 21%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+
+    &__card {
+        flex: 1;
+    }
+
+
+}
+</style>

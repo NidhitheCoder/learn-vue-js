@@ -7,7 +7,6 @@ const {
     hiringLabel,
     homeLabel,
     howWeWorkLabel,
-    logo,
     teamLabel,
 } = websiteContent.navbar;
 
@@ -16,7 +15,7 @@ const {
 <template>
     <div class="navigation-container">
         <div class="logo-wrapper">
-            <img :src="logo">
+            <img src="../assets/logo.png">
         </div>
         <nav>
             <router-link :to="ROUTES.Home.path">{{ homeLabel }}</router-link>
@@ -40,6 +39,7 @@ const {
     background-color: $color-primary-background;
     position: fixed;
     border-bottom: 2px solid $color-primary-faded;
+    z-index: 10;
 }
 
 nav a {
