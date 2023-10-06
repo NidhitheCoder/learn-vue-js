@@ -460,16 +460,17 @@
     "contact": {
         "bannerTitle": "Contact us",
         "bannerText": "Would you like to work with Vehikl on your next project? Curious about careers at Vehikl?",
+        "backgroundURL": "https://vehikl.com/static/d2809d09f657ed9ed57d4397c28a4cae/b3724/candid-4.webp",
         "getInTouchLabel": "Get in touch",
         "getInTouchSubtext": "We'd love to talk to you! Get in touch via the contact form, or send us an email directly at {email} or by phone at {PhoneNumber}",
         "appendData": [
             {
-                "key": "email",
+                "key": "{email}",
                 "label": "go@vehikl.com",
                 "link": "go@vehikl.com"
             },
             {
-                "key": "phoneNumber",
+                "key": "{phoneNumber}",
                 "label": " (519) 746-9855.",
                 "link": "tel:5197469855"
             }
