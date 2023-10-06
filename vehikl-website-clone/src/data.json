@@ -10,6 +10,7 @@
     "hiring": {
         "bannerTitle": "Jobs",
         "bannerText": "Vehikl invests in our clients and our employees. If you are someone eager to learn, collaborate with others, and produce excellent results, then apply today to join our fast growing team!",
+        "backgroundURL": "https://vehikl.com/static/9d371d67feba328c64d5ea7bfd62ed52/b3724/candid-1.webp",
         "bannerCard": {
             "title": "Developer",
             "text": "As a new member of our team, you will help build the interfaces, behaviours, architecture, and code quality of premium web and mobile applications. You will follow projects for new and existing clients from start to finish while working closely with those clients as well as your team. At Vehikl, mob programming is a big part of our processes and how we work. You will mob daily with other developers on our team to produce clean code with efficiency and finesse.",
@@ -50,6 +51,409 @@
                 "name": "podcast",
                 "tooltipText": "Podcast icon",
                 "url": "http://podcast.vehikl.com/"
+            }
+        ]
+    },
+    "team": {
+        "title": "Our Team",
+        "description": "We're a group of proud test-driven developers and creative product designers who focus on writing clean, maintainable code.",
+        "joinButtonLabel": "JOIN OUR TEAM",
+        "backgroundURL": "https://vehikl.com/static/f0f392a0edd11799579a9f2f4a591608/795b9/candid-3.webp",
+        "teamMembers": [
+            {
+                "name": "Chris Keithlin",
+                "designation": "Founder",
+                "imageURL": "https://vehikl.com\n/static/21486de2e51682c5dfbb70132af2c9b8/416c3/chris-keithlin.webp"
+            },
+            {
+                "name": "Grant Lovell",
+                "designation": "Founder",
+                "imageURL": "https://vehikl.com\n/static/a3816098c858defe5a80e8f6ca930beb/416c3/grant-lovell.webp"
+            },
+            {
+                "name": "Colin DeCarlo",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/28f1cf9c54c2b01d497e49a11ef3bbc5/416c3/colin-decarlo.webp"
+            },
+            {
+                "name": "Dan Soppelsa",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/7ab912fb6f58414e41b4ea48a8e9e4cd/416c3/dan-soppelsa.webp"
+            },
+            {
+                "name": "Jeff Campbell",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/eb86c07db94e2fb30d3e779157206d68/416c3/jeff-campbell.webp"
+            },
+            {
+                "name": "Rich Bettridge",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/1226d8627af1fe39a9746e5e0704479e/416c3/rich-bettridge.webp"
+            },
+            {
+                "name": "Darren Galway",
+                "designation": "Designer + Developer",
+                "imageURL": "https://vehikl.com\n/static/338e327df230707a957f4d52349e9cf2/416c3/darren-galway.webp"
+            },
+            {
+                "name": "Brad Brothers",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/c94ea2d5d0bb2b9e071e099bff9b493c/416c3/brad-brothers.webp"
+            },
+            {
+                "name": "Kelly DeCoppel",
+                "designation": "Executive Assistant",
+                "imageURL": "https://vehikl.com\n/static/1a3105a9b7ea281da9d5a24f37472661/416c3/kelly-decoppel.webp"
+            },
+            {
+                "name": "Adam Frank",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/570ecb94c2a81b68e2ead8bbf48e4f84/416c3/adam-frank.webp"
+            },
+            {
+                "name": "Margaret Tavares",
+                "designation": "Community",
+                "imageURL": "https://vehikl.com\n/static/7d935b052fb42a567a042ba34bbf2e73/416c3/margaret-tavares.webp"
+            },
+            {
+                "name": "Lucas Gladding",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/adccd464df7f9c1a98a8fc67c7d934f6/416c3/lucas-gladding.webp"
+            },
+            {
+                "name": "Alex Barry",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/342d9136dba92ccea3d16fb7fe6fe6e9/416c3/alex-barry.webp"
+            },
+            {
+                "name": "Lisa Fehr",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/e868d4c1e74bd6dd40a41dcf5dc631f6/416c3/lisa-fehr.webp"
+            },
+            {
+                "name": "Brian Hogg",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/8fa848ae06ed5ec610018269a69cf705/416c3/brian-hogg.webp"
+            },
+            {
+                "name": "Felipe Flor",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/d66afbee022e0193cc19a9ef07b1e8ed/416c3/felipe-flor.webp"
+            },
+            {
+                "name": "Tuan Truong",
+                "designation": "Designer + Developer",
+                "imageURL": "https://vehikl.com\n/static/7844863eb97d6d56914637aa003989be/416c3/tuan-truong.webp"
+            },
+            {
+                "name": "Matt Cormier",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/46c4f0d65070fd4731b622d668e4ebbf/416c3/matt-cormier.webp"
+            },
+            {
+                "name": "Tyler Bauman",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/779411cad8576a8768d58d6aad2433d4/416c3/tyler-bauman.webp"
+            },
+            {
+                "name": "Christian Griffin",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/bed5a1c5c453a07e5c514670f93b9d34/416c3/christian-griffin.webp"
+            },
+            {
+                "name": "Gerrie Swart",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/b9fe8c74835317dfbb747944c0e09d19/416c3/gerrie-swart.webp"
+            },
+            {
+                "name": "Nathan Davis",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/a111e70969ebfb367a41074251fc2567/416c3/nathan-davis.webp"
+            },
+            {
+                "name": "Nick Down",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/91371726eba82777722afa50ea60c4e7/416c3/nick-down.webp"
+            },
+            {
+                "name": "Karen Gallego",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/3c348bba5138ac300f42aac80a743274/416c3/karen-gallego.webp"
+            },
+            {
+                "name": "Joel Repta",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/d36128a90d0f4cc7e564e73affb3cbaa/416c3/joel-repta.webp"
+            },
+            {
+                "name": "Leonard Vuniqi",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/9388463b7f8c7a6848e513966c6b535f/416c3/leonard-vuniqi.webp"
+            },
+            {
+                "name": "Joel Podrebarac",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/c05229381045e5a5aa73b2db22ec51a4/416c3/joel-podrebarac.webp"
+            },
+            {
+                "name": "Justin Bates",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/3c455a373eba1a1f1fb58b865f510949/416c3/justin-bates.webp"
+            },
+            {
+                "name": "Josh Gaber",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/73da8382fb734825f3f0c9117b29ce43/416c3/josh-gaber.webp"
+            },
+            {
+                "name": "Neil Froggatt",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/a21fc6f018606851ab8fbc07a2494a82/416c3/neil-froggatt.webp"
+            },
+            {
+                "name": "Clayton D'Mello",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/fdaa28922ff79c52661b1ccfe5859899/416c3/clayton-dmello.webp"
+            },
+            {
+                "name": "Jacob Gardiner",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/3191d01a1ea870af05e1a9584e664c4e/416c3/jacob-gardiner.webp"
+            },
+            {
+                "name": "John Ith",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/525c59414d78e209bfc4ef531d995703/416c3/john-ith.webp"
+            },
+            {
+                "name": "Alisa Vynohradova",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/e90620685d3fb68d2ce072458ebd4a20/416c3/alisa-vynohradova.webp"
+            },
+            {
+                "name": "Andrii Denysenko",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/af0967df25faef97ab51d50d2f76507c/416c3/andrii-denysenko.webp"
+            },
+            {
+                "name": "Manuel Canarte",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/d8fc5d8cc73f80be6f21354faa8c3edf/416c3/manuel-canarte.webp"
+            },
+            {
+                "name": "Ben Henry",
+                "designation": "Community",
+                "imageURL": "https://vehikl.com\n/static/086ff4f192a84d929acad810174d614a/416c3/ben-henry.webp"
+            },
+            {
+                "name": "Justin Struk",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/6d6c85dcacf81e7820ccd2d27419d01e/416c3/justin-struk.webp"
+            },
+            {
+                "name": "Andrew Noble",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/26503a6a2ec91eb78c0a3440dbab2655/416c3/andrew-noble.webp"
+            },
+            {
+                "name": "Jeff Polasz",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/b3fe7b90e70c7b63e0837e4795e1aa1b/416c3/jeff-polasz.webp"
+            },
+            {
+                "name": "David Nguyen",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/bc4a9159012804bf2182b1b457f993ef/416c3/david-nguyen.webp"
+            },
+            {
+                "name": "Jason Groulx",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/00d0a0cd546687d33970dc91ad3d6b2d/416c3/jason-groulx.webp"
+            },
+            {
+                "name": "Chris Lemon",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/d2a44d38cc8c16109a20e32277e30c86/416c3/chris-lemon.webp"
+            },
+            {
+                "name": "Daniel Lopes Arcanjo",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/0417bf7ebb99468103c1068d0efcfa97/416c3/daniel-lopes-arcanjo.webp"
+            },
+            {
+                "name": "Ian Ewing",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/aacbb009b76532effe3b038bf13cef3b/416c3/ian-ewing.webp"
+            },
+            {
+                "name": "Nick Byam",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/d3a3cf1b280bf03fa6b0cb07b676e969/416c3/nick-byam.webp"
+            },
+            {
+                "name": "Daniel Baer",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/16d5a6a98e266be92df0cc20074fea50/416c3/daniel-baer.webp"
+            },
+            {
+                "name": "Jakob Chisholm",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/6afc2abfdfea0c7fd70a45d6c44c8646/416c3/jakob-chisholm.webp"
+            },
+            {
+                "name": "Brady Deroy",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/a67a4d7e9501fae200fbed9393cb46a3/416c3/brady-deroy.webp"
+            },
+            {
+                "name": "Alicia Bulhoes",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/2e97b6556e67cf8fbf42e04e09cc60f7/416c3/alicia-bulhoes.webp"
+            },
+            {
+                "name": "Joe Racz",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/41aea7e1e1d51953eb0ee88711aedfb0/416c3/joe-racz.webp"
+            },
+            {
+                "name": "Ahmed Abdelfattah",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/22538b2bc37c3f856e9b499a79d6af0c/416c3/ahmed-abdelfattah.webp"
+            },
+            {
+                "name": "Segel Jacob",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/5e1532872ee74437966aab96a8ebeb81/416c3/segel-jacob.webp"
+            },
+            {
+                "name": "Ruta Simonavitchious",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/624bf7d3366b50474a6f0f0887477ec6/416c3/ruta-sim.webp"
+            },
+            {
+                "name": "David Lutz",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/4007c7f3be4d6502a63291f8abaa5b91/416c3/david-lutz.webp"
+            },
+            {
+                "name": "Brian McLachlin",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/0e81367ab3b1b82c16276c90675b3bf1/416c3/brian-mclachlin.webp"
+            },
+            {
+                "name": "Ryan MacKenzie",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/d05fa28be57f56225822b7707e7bf868/416c3/ryan-mackenzie.webp"
+            },
+            {
+                "name": "Max Dubinovsky",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/33994e0dbd046ecc1be84105058575f8/416c3/max-dubinovsky.webp"
+            },
+            {
+                "name": "Icaro Ryan Souza",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/4199d2fdd247be530ceecff5fbeea546/416c3/icaro-souza.webp"
+            },
+            {
+                "name": "Connie Kennedy",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/0bb264d31bb771669637575ced237f67/416c3/connie-kennedy.webp"
+            },
+            {
+                "name": "Ryan Enns",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/0be51d52aa281b8272662dbb41506f89/416c3/ryan-enns.webp"
+            },
+            {
+                "name": "Ana de Oliveira",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/434b3c18fe054b9c04279f3fb276ca4b/416c3/ana-deoliveira.webp"
+            },
+            {
+                "name": "Prashant Patel",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/6eb52cea79147e003fa5b64de943655b/416c3/prashant-patel.webp"
+            },
+            {
+                "name": "Justin Bonello",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/12926477d22f2b77791fbc9c7804507a/416c3/justin-bonello.webp"
+            },
+            {
+                "name": "Joel Smith",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/9cc14680af5e8f465525e046d7c42e5b/416c3/joel-smith.webp"
+            },
+            {
+                "name": "Eric Emerson",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/62ff7954b639fd34c4a4e835029d2d4c/416c3/eric-emerson.webp"
+            },
+            {
+                "name": "Hunter Barkley",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/92cab745a8cba414d3d8364c9964fd83/416c3/hunter-barkley.webp"
+            },
+            {
+                "name": "Milosz Zapolski",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/df89fc56ab9b474da734f7dfce7f3d7e/416c3/milosz-zapolski.webp"
+            },
+            {
+                "name": "Muhammad Mamooji",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/b0e91d9bb9675e15e80091cd7884cba5/416c3/muhammad-mamooji.webp"
+            },
+            {
+                "name": "Sara Fox",
+                "designation": "Community",
+                "imageURL": "https://vehikl.com\n/static/6b3eefaf3a82693216959899db28809b/416c3/sara-fox.webp"
+            },
+            {
+                "name": "Rohullah Noory",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/73792b5d48b7e3741635602ac23d337c/416c3/rohullah-noory.webp"
+            },
+            {
+                "name": "Taylor Szabo",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/7e16703b76c0703f418210c97a9df7ae/416c3/taylor-szabo.webp"
+            },
+            {
+                "name": "Brayden Bowler",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/36809d5ef788358ce20306fafa708e64/416c3/brayden-bowler.webp"
+            },
+            {
+                "name": "Caleb Brown",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/c07a5a5d379999c59184944e7f879550/416c3/caleb-brown.webp"
+            },
+            {
+                "name": "John Malapit",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/49f828f83adbdcf2581c991c8d070988/416c3/john-malapit.webp"
+            },
+            {
+                "name": "Giang Nguyen",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/3c1c5534f0b13ac37b48051ced677fe2/416c3/giang-nguyen.webp"
+            },
+            {
+                "name": "Armand Kaufmann",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/ea890bbbe150b0dea4fd67ecb9e7dc04/416c3/armand-kaufmann.webp"
+            },
+            {
+                "name": "Max Grodzki",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/51191ddafe23981b12e2e1f3b5d75c09/416c3/max-grodzki.webp"
+            },
+            {
+                "name": "Russell Paddick",
+                "designation": "Developer",
+                "imageURL": "https://vehikl.com\n/static/c3ffefb7b7590fb9fa1f98d2df84cb69/416c3/russell-paddick.webp"
             }
         ]
     }

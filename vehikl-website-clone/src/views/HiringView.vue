@@ -2,12 +2,13 @@
 import CardTemplate from '@/components/CardTemplate.vue';
 import websiteContent from '@/data.json';
 
-const { bannerTitle, bannerText, bannerCard } = websiteContent.hiring;
+const { backgroundURL, bannerTitle, bannerText, bannerCard } = websiteContent.hiring;
 
 </script>
 
 <template>
-    <div class="banner">
+    <div class="banner"
+        :style="{ background: `linear-gradient(rgba(17, 24, 39, 0.6), rgb(17, 24, 39), rgb(17, 24, 39)), url('${backgroundURL}')` }">
         <div class="banner__content">
             <h1>{{ bannerTitle }}</h1>
             <p> {{ bannerText }}</p>
@@ -26,8 +27,8 @@ const { bannerTitle, bannerText, bannerCard } = websiteContent.hiring;
 
 <style lang="scss" scoped>
 .banner {
-    background-image: linear-gradient(to top, $color-primary-background, $color-primary-background, transparent), url('../assets/banner.webp');
-    background-position: inherit;
+    background-position: bottom !important;
+    background-size: cover !important;
     height: 85vh;
     border-bottom: 1px solid $color-primary-faded;
     color: $color-secondary-text;
@@ -42,6 +43,8 @@ const { bannerTitle, bannerText, bannerCard } = websiteContent.hiring;
         h1 {
             font-size: 3rem;
             color: $color-white;
+            margin-bottom: 1.5rem;
+            line-height: 1;
         }
 
         p {
