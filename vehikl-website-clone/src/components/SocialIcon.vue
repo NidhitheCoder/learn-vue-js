@@ -3,12 +3,12 @@ import { defineProps } from 'vue'
 
 defineProps<{ variant: string }>()
 
-import FacebookIcon from './FacebookIcon.vue';
-import InstagramIcon from './InstagramIcon.vue';
-import LinkedinIcon from './LinkedinIcon.vue';
-import PodcastIcon from './PodcastIcon.vue';
-import TwitterIcon from './TwitterIcon.vue';
-import YoutubeIcon from './YoutubeIcon.vue';
+import FacebookIcon from '../shared/icons/FacebookIcon.vue';
+import InstagramIcon from '../shared/icons/InstagramIcon.vue';
+import LinkedinIcon from '../shared/icons/LinkedinIcon.vue';
+import PodcastIcon from '../shared/icons/PodcastIcon.vue';
+import TwitterIcon from '../shared/icons/TwitterIcon.vue';
+import YoutubeIcon from '../shared/icons/YoutubeIcon.vue';
 
 </script>
 

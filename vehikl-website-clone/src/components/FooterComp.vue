@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import SocialIcon from '@/shared/icons/SocialIcon.vue';
 import websiteContent from '../data.json';
+import SocialIcon from './SocialIcon.vue';
 
 const footerContent = websiteContent.footer;
 </script>
 
 <template>
     <div class="footer-container">
-        <img src="../assets/logo.png" />
+        <img class="footer-container__logo" src="../assets/logo.png" />
         <div class="footer-container__social-wrapper">
             <SocialIcon v-for="item in footerContent.socials" :variant="item.name" v-bind:key="item.name" />
         </div>
-        <p>{{ footerContent.copy_rightText }}</p>
+        <p class="footer-container__copyright-text">{{ footerContent.copy_rightText }}</p>
     </div>
 </template>
 
@@ -23,15 +23,27 @@ const footerContent = websiteContent.footer;
     flex-direction: column;
     padding: 3rem 0;
     color: $color-primary-light;
-    gap: 0.5rem;
+    gap: 2rem;
+
+    &__logo {
+        width: 240px;
+        height: 70px;
+    }
 
     &__social-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
-        width: 10%;
+        gap: 2rem;
+        width: 16.5%;
+        margin-bottom: 0.5rem;
+    }
+
+    &__copyright-text {
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        line-height: 24px;
     }
 }
 </style>

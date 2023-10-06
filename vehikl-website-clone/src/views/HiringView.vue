@@ -27,7 +27,7 @@ const { bannerTitle, bannerText, bannerCard } = websiteContent.hiring;
 <style lang="scss" scoped>
 .banner {
     background-image: linear-gradient(to top, $color-primary-background, $color-primary-background, transparent), url('../assets/banner.webp');
-    background-position: center;
+    background-position: inherit;
     height: 85vh;
     border-bottom: 1px solid $color-primary-faded;
     color: $color-secondary-text;
@@ -41,6 +41,7 @@ const { bannerTitle, bannerText, bannerCard } = websiteContent.hiring;
 
         h1 {
             font-size: 3rem;
+            color: $color-white;
         }
 
         p {
