@@ -33,7 +33,7 @@ const {
     width: 100%;
     margin: auto;
     display: flex;
-    padding: 0 20%;
+    padding: 0 21%;
     height: 5rem;
     justify-content: space-between;
     align-items: center;

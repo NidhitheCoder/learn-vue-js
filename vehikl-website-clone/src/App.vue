@@ -1,4 +1,5 @@
 <script setup>
+import FooterComp from './components/FooterComp.vue';
 import TopNavbar from './components/TopNavbar.vue'
 </script>
 
@@ -8,6 +9,7 @@ import TopNavbar from './components/TopNavbar.vue'
     <div class="content-wrapper">
       <router-view />
     </div>
+    <footer-comp />
   </div>
 </template>
 

@@ -27,10 +27,11 @@ const { bannerTitle, bannerText, bannerCard } = websiteContent.hiring;
 <style lang="scss" scoped>
 .banner {
     background-image: linear-gradient(to top, $color-primary-background, $color-primary-background, transparent), url('../assets/banner.webp');
+    background-position: center;
     height: 85vh;
     border-bottom: 1px solid $color-primary-faded;
     color: $color-secondary-text;
-    padding: 0 20%;
+    padding: 0 21%;
     display: flex;
     flex-direction: column;
 
