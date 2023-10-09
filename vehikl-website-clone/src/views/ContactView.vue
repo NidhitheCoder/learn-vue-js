@@ -53,11 +53,13 @@ const {
             variant="small"
           >
             <div class="location-heading">
-              <h1>
+              <h1 class="location-heading__name">
                 {{ location.name }}
               </h1>
               <div>
-                <a :href="location.link">{{ mapLabel }}</a>
+                <a :href="location.link" class="location-heading__map-label">{{
+                  mapLabel
+                }}</a>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -75,7 +77,7 @@ const {
                 </svg>
               </div>
             </div>
-            <p>{{ location.address }}</p>
+            <p class="location-heading__address">{{ location.address }}</p>
           </card-template>
         </div>
       </div>
@@ -120,6 +122,12 @@ const {
   display: flex;
   flex-direction: column;
 
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   &__card-element {
     display: flex;
     flex-direction: column;
@@ -159,5 +167,20 @@ const {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  &__name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  &__map-label {
+    color: $color-orange-dark;
+  }
+
+  &__address {
+    color: $color-primary-light;
+    max-width: 150px;
+  }
 }
 </style>
