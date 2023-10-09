@@ -484,11 +484,13 @@
         "locations": [
             {
                 "name": "Waterloo",
-                "address": "200 Bathurst Drive Waterloo, Ontario N2V 2L7"
+                "address": "200 Bathurst Drive Waterloo, Ontario N2V 2L7",
+                "link": "https://goo.gl/maps/8MSDeFwd1CM2"
             },
             {
                 "name": "Hamilton",
-                "address": "115 King St E, 3rd Floor Hamilton, Ontario L8N 1A9"
+                "address": "115 King St E, 3rd Floor Hamilton, Ontario L8N 1A9",
+                "link": "https://goo.gl/maps/VWBHcC2Vojq"
             }
         ]
     }
