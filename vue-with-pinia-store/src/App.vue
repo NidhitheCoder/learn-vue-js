@@ -15,11 +15,13 @@ import HelloWorld from './components/HelloWorld.vue'
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/about">About</RouterLink>
           <RouterLink to="/add-user">Add user</RouterLink>
+          <RouterLink to="/users-list">Users list</RouterLink>
         </nav>
       </div>
     </header>
-
-    <RouterView />
+    <div class="wrapper">
+      <RouterView />
+    </div>
   </div>
 </template>
 
@@ -64,5 +66,10 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100%;
 }
 </style>
