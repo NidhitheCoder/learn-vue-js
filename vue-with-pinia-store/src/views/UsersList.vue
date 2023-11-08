@@ -1,10 +1,11 @@
 <template>
   <div class="list-container">
-    <div class="user-table-header">
-      <h1>Users List</h1>
-      <p>Total users: {{ users.length || 0 }}</p>
-    </div>
     <div class="list-item-wrapper">
+      <div class="user-table-header">
+        <h1>Users List</h1>
+        <p>Total users: {{ users.length }}</p>
+      </div>
+      <div v-if="!users.length">No Users found</div>
       <div
         v-for="user in users"
         :key="user.id"
@@ -50,6 +51,7 @@ const users = computed(() => usersList.value)
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  border-bottom: 1px solid cornflowerblue;
 }
 
 .user-item {

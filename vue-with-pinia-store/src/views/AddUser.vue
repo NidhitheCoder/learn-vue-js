@@ -7,7 +7,7 @@
     <input name="name" type="text" v-model="user.name" />
     <label for="color-code">Color Code</label>
     <input name="color-code" type="text" v-model="user.colorCode" />
-    <p class="error-text">{{ error }}</p>
+    <p class="error-text">{{ errorMessage }}</p>
     <button @click="onAddUserSubmit" class="add-user-button">Add User</button>
   </div>
 </template>
@@ -18,7 +18,7 @@ import { useUserStore } from '../stores/user'
 import type { User } from '../types'
 
 const { usersList, addUser } = useUserStore()
-const error = ref('')
+const errorMessage = ref('')
 
 const initialUser = computed(() => ({
   name: '',
@@ -35,9 +35,9 @@ const onAddUserSubmit = () => {
   if (isValidInput === invalidArrayIndex) {
     addUser(user.value)
     user.value = initialUser.value
-    error.value = ''
+    errorMessage.value = ''
   } else {
-    error.value = 'Please fill all the fields'
+    errorMessage.value = 'Please fill all the fields'
   }
 }
 </script>
@@ -54,6 +54,7 @@ const onAddUserSubmit = () => {
   border: 1px solid gray;
   padding: 4rem;
   min-width: 500px;
+  border-radius: 5px;
 }
 
 .user-form label {

@@ -1,6 +1,11 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate dolorem alias voluptatum
+      corrupti laboriosam consectetur sunt magni et ipsam, quos harum, voluptates pariatur
+      reiciendis! Numquam tempore porro praesentium maiores ut.
+    </p>
     <p>{{ countText }}</p>
   </div>
 </template>
@@ -19,8 +24,9 @@ const countText = computed(() => `The double count is ${counterStore.doubleCount
 .about {
   display: flex;
   align-items: center;
+  gap: 2rem;
   flex-direction: column;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem 4rem;
 }
 </style>
